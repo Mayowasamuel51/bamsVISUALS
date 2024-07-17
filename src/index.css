@@ -25,7 +25,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.507);
 }
 
 .testimonial {
@@ -33,6 +33,7 @@
     background-size: cover;
     background-position: center;
     position: relative;
+    background-attachment: fixed;
 }
 
 .testimonial::after {
