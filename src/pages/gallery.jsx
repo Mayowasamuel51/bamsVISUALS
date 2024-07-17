@@ -1,16 +1,17 @@
 import gallery_one from "../assets/images/gallery1.svg"
 import gallery_two from "../assets/images/gallery2.svg"
 import gallery_three from "../assets/images/gallery3.svg"
+import { motion } from "framer-motion"
 
 
 const Gallery = () => {
     return (
         <main>
             <div className="home min-h-screen flex justify-center items-center">
-                <div className="relative z-10 text-white text-center flex flex-col gap-4">
+                <motion.div initial={{ opacity: 0, y: -30 }} animate={{ opacity: 1, y: 0 }} transition={{ type: "spring", duration: 0.5, stiffness: 500, damping: 10 }} className="relative z-10 text-white text-center flex flex-col gap-4">
                     <h1 className="md:text-4xl text-3xl font-bold">Gallery</h1>
                     <p className='cursive text-sm md:text-4xl'>Your event through my lens</p>
-                </div>
+                </motion.div>
             </div>
             <div className='py-20'>
                 <div className='text-center'>

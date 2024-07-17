@@ -7,6 +7,7 @@ export default {
   theme: {
     extend: {
       colors: {
+        text: "#B68302",
         button: "#B68302"
       }
     },

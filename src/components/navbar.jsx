@@ -20,10 +20,10 @@ const Navbar = () => {
             <div className="md:block hidden">
                 <nav>
                     <ul className={`flex items-center gap-5 ${bg ? "text-black" : "text-white"}`}>
-                        <li className="hover:opacity-70 duration-300"><NavLink to="/">Home</NavLink></li>
-                        <li className="hover:opacity-70 duration-300"><NavLink to="/gallery">Gallery</NavLink></li>
-                        <li className="hover:opacity-70 duration-300"><NavLink to="contact">Contact</NavLink></li>
-                        <li className="hover:opacity-70 duration-300"><NavLink to="/about">About</NavLink></li>
+                        <li className="hover:opacity-70 duration-300"><NavLink className={({isActive})=> isActive && "text-text"} to="/">Home</NavLink></li>
+                        <li className="hover:opacity-70 duration-300"><NavLink className={({isActive})=> isActive && "text-text"} to="/gallery">Gallery</NavLink></li>
+                        <li className="hover:opacity-70 duration-300"><NavLink className={({isActive})=> isActive && "text-text"} to="contact">Contact</NavLink></li>
+                        <li className="hover:opacity-70 duration-300"><NavLink className={({isActive})=> isActive && "text-text"} to="/about">About</NavLink></li>
                     </ul>
                 </nav>
             </div>
