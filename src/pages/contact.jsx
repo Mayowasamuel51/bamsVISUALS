@@ -6,7 +6,7 @@ const Contact = () => {
             <div className="home min-h-screen flex justify-center items-center">
                 <motion.div initial={{ opacity: 0, y: -30 }} animate={{ opacity: 1, y: 0 }} transition={{ type: "spring", duration: 0.5, stiffness: 500, damping: 10 }} className="relative z-10 text-white text-center flex flex-col gap-5">
                     <h1 className="md:text-4xl text-3xl font-bold">Contact Me</h1>
-                    <p className='cursive text-sm md:text-4xl'>Dreams become reality with me</p>
+                    <p className='cursive text-2xl md:text-4xl'>Dreams become reality with me</p>
                 </motion.div>
             </div>
 

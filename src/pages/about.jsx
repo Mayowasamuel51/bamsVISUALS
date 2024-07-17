@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import style from "../assets/images/about.svg";
-import { motion, AnimatePresence, useInView } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 
 
 const containerVariant = {
@@ -36,7 +36,7 @@ const About = () => {
         <div className="home min-h-screen flex justify-center items-center">
             <motion.div initial={{ opacity: 0, y: -30 }} animate={{ opacity: 1, y: 0 }} transition={{ type: "spring", duration: 0.5, stiffness: 500, damping: 10 }} className="relative z-10 text-white text-center flex flex-col gap-5">
                 <h1 className="md:text-4xl text-3xl font-bold">About Me</h1>
-                <p className='cursive text-sm md:text-4xl'>Find out what makes me ticks</p>
+                <p className='cursive text-2xl md:text-4xl'>Find out what makes me ticks</p>
             </motion.div>
         </div>
 
