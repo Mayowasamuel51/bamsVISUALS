@@ -13,7 +13,8 @@ const Navbar = () => {
     }, [])
 
     return (
-        <header className={`z-20 fixed w-full top-0 right-0 left-0 flex justify-between items-center py-4 md:px-20 px-4 ${bg && "bg-white shadow-md"} duration-300`}>
+        <header className={`z-20 fixed w-full top-0 right-0 left-0 flex justify-between items-center py-4 md:px-20 px-4 ${bg && "shadow-md"} duration-300`}>
+            <div className={`${bg && "bg-white h-full"} duration-300 h-0 origin-top absolute inset-0 -z-10`}></div>
             <div className="font-light md:text-3xl">
                 BAMS<span className="font-semibold">VISUALS</span>
             </div>
