@@ -35,14 +35,14 @@ const Home = () => {
                         </SplideSlide>
                         <SplideSlide>
                             <div className="text-center px-4 py-6 md:px-10 md:py-24 flex flex-col justify-between">
-                                <p className='md:text-base text-sm'>Absolutely THE BEST videographer out there!!! Bams captured our special day with such grace and elegance. His talent is unmatched and his kindness is contagious! I can&apos;t recommend him enough - he&apos;s a gem! We received our sneak peek within a week and I&apos;m OBSESSED with the footage. Can&apos;t wait to see the final product</p>
-                                <h3 className="cursive text-3xl md:text-5xl">Adetola & Henry</h3>
+                                <p className='md:text-base text-sm'>Working with Bams was an absolute dream! He captured our love story with such passion and creativity. The final film is a masterpiece! I&apos;ve never seen anything so beautiful. Bams is a true artist and I&apos;m so grateful to have had him as a part of our special day. Highly recommend him to anyone looking for a talented and dedicated videographer</p>
+                                <h3 className="cursive text-3xl md:text-5xl">Ari & Micheal</h3>
                             </div>
                         </SplideSlide>
                         <SplideSlide>
                             <div className="text-center px-4 py-6 md:px-10 md:py-24 flex flex-col justify-between">
-                                <p className='md:text-base text-sm'>Absolutely THE BEST videographer out there!!! Bams captured our special day with such grace and elegance. His talent is unmatched and his kindness is contagious! I can&apos;t recommend him enough - he&apos;s a gem! We received our sneak peek within a week and I&apos;m OBSESSED with the footage. Can&apos;t wait to see the final product</p>
-                                <h3 className="cursive text-3xl md:text-5xl">Adetola & Henry</h3>
+                                <p className='md:text-base text-sm'>Where do I even begin? Bams is a rockstar videographer who went above and beyond to capture our wedding day. His energy is infectious and talent undeniable. We just received our highlight reel and it&apos;s pure magic! I&apos;ve watched it a million times already. If you&apos;re looking for a videographer who will deliver exceptional quality and service, look no further!</p>
+                                <h3 className="cursive text-3xl md:text-5xl">Simone & Deji</h3>
                             </div>
                         </SplideSlide>
                     </Splide>
