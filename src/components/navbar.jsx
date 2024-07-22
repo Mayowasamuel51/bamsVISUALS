@@ -4,6 +4,8 @@ import { FaBars } from "react-icons/fa";
 import { FaXmark } from "react-icons/fa6";
 import { AnimatePresence } from "framer-motion"
 import Mobilenav from "./mobilenav";
+import logo from "../assets/images/logo.png";
+
 const Navbar = () => {
     const [bg, handleBg] = useState(false)
     const [toggleNav, setToggleNav] = useState(false)
@@ -21,10 +23,10 @@ const Navbar = () => {
     }, [])
 
     return (
-        <header className={`z-20 fixed w-full top-0 right-0 left-0 flex justify-between items-center py-4 md:px-20 px-4 ${bg && "shadow-md"} duration-300`}>
+        <header className={`z-20 fixed w-full top-0 right-0 left-0 flex justify-between items-center md:px-20 px-4 ${bg && "shadow-md"} duration-300`}>
             <div className={`${bg && "bg-white h-full"} duration-300 h-0 origin-top absolute inset-0 -z-10`}></div>
-            <div className="font-light md:text-3xl">
-                BAMS<span className="font-semibold">VISUALS</span>
+            <div className="">
+                <img src={logo} className="w-10 md:w-20" alt="logo" />
             </div>
             <div className="md:block hidden">
                 <nav>
@@ -44,7 +46,7 @@ const Navbar = () => {
             </div>
 
             <AnimatePresence>
-                {toggleNav && <Mobilenav/>}
+                {toggleNav && <Mobilenav handleNav/>}
             </AnimatePresence>
 
         </header>
