@@ -26,7 +26,7 @@ const Navbar = () => {
         <header className={`z-20 fixed w-full top-0 right-0 left-0 flex justify-between items-center md:px-20 px-4 ${bg && "shadow-md"} duration-300`}>
             <div className={`${bg && "bg-white h-full"} duration-300 h-0 origin-top absolute inset-0 -z-10`}></div>
             <div className="">
-                <img src={logo} className="w-20" alt="logo" />
+                <img src={logo} className="w-10 md:w-20" alt="logo" />
             </div>
             <div className="md:block hidden">
                 <nav>
