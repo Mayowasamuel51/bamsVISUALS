@@ -13,8 +13,8 @@ const Home = () => {
             <div className={`home relative bg-cover min-h-screen flex justify-center items-center overflow-hidden`}>
                 <Splide className='absolute top-0 left-0 bottom-0 w-full h-full' options={{
                     type: "fade",
-                    speed: 2000,
-                    interval: 4000,
+                    speed: 3000,
+                    interval: 20000,
                     autoplay: true,
                     rewind: true,
                     arrows: false,
