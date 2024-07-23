@@ -17,6 +17,18 @@ html {
     font-family: "Island Moments", cursive;
 }
 
+/* INDIVIDUAL TEXT ANIMATION */
+.word {
+    display: inline-block;
+    transition: transform 0.2s ease-in-out, color 0.2s ease;
+}
+  
+.word:hover {
+    transform: translateY(-15px);
+    /* transform: rotateY(90deg); */
+    color: #B68302;
+}
+
 .home {
     position: relative;
     background-size: cover;
@@ -50,7 +62,7 @@ html {
     border-radius: 0;
     border-radius: 4px;
     width: 8px;
-} 
+}
 
 .testimonial li button.splide__pagination__page.is-active {
     opacity: 1 !important;
