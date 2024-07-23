@@ -48,7 +48,6 @@ html {
     animation: zoom 20s infinite;
 }
 
-
 .home {
     position: relative;
 }
@@ -61,7 +60,7 @@ html {
 }
 
 .testimonial {
-    background-image: url("./assets//images/home-bg.jpg");
+    background-image: url("./assets//images/home-bg01.jpg");
     background-size: cover;
     background-position: center;
     position: relative;

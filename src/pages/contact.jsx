@@ -1,19 +1,21 @@
 import { motion } from "framer-motion"
+import BgChange from "../components/bgChange"
 
 const Contact = () => {
     return (
         <main>
-            <div className="home min-h-screen flex justify-center items-center">
+            <div className="home relative min-h-screen flex justify-center items-center">
+                <BgChange />
                 <motion.div initial={{ opacity: 0, y: -30 }} animate={{ opacity: 1, y: 0 }} transition={{ type: "spring", duration: 0.5, stiffness: 500, damping: 10 }} className="relative z-10 text-white text-center flex flex-col gap-5">
-                    <h1 className="md:text-4xl text-3xl font-bold">Contact Me</h1>
-                    <p className='cursive text-2xl md:text-4xl'>Dreams become reality with me</p>
+                    <h1 className="md:text-4xl text-3xl font-medium">Contact Me</h1>
+                    <p className='cursive text-2xl md:text-5xl'>Dreams become reality with me</p>
                 </motion.div>
             </div>
 
             <div className="md:px-10 px-4 md:py-20">
-                <div className="text-center md:w-[600px] mx-auto py-4 md:py-8 flex flex-col gap-8">
-                    <h1 className="font-bold md:text-4xl">Let’s create <span className="font-normal cursive md:text-6xl text-text">Magic</span></h1>
-                    <p className="md:text-base text-sm">I am excited to be a part of your big day. Kindly fill out the contact form below and we will be in touch with more details. Please allow 24 hours for a response</p>
+                <div className="text-center md:w-[600px] mx-auto py-6 md:py-8 flex flex-col gap-4 md:gap-8">
+                    <h1 className="font-medium md:text-4xl">Let’s create <span className="font-normal cursive text-4xl md:text-6xl text-text">Magic</span></h1>
+                    <p className="md:text-xl text-base">I am excited to be a part of your big day. Kindly fill out the contact form below and we will be in touch with more details. Please allow 24 hours for a response</p>
                 </div>
                 <form action="" className="flex flex-col gap-5 md:gap-10">
                     <div>
