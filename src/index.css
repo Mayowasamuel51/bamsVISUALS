@@ -22,17 +22,16 @@ html {
     display: inline-block;
     transition: transform 0.2s ease-in-out, color 0.2s ease;
 }
-  
+
 .word:hover {
     transform: translateY(-15px);
     /* transform: rotateY(90deg); */
     color: #B68302;
 }
 
+
 .home {
     position: relative;
-    background-size: cover;
-    background-image: url("./assets/images/home-bg.jpg");
 }
 
 .home::after {
