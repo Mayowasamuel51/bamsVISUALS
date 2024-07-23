@@ -8,9 +8,9 @@ import HoneyBookWidget from "./HoneyBook.jsx";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <ParallaxProvider>
-      <HoneyBookWidget>
+      {/* <HoneyBookWidget> */}
         <App />
-      </HoneyBookWidget>
+      {/* </HoneyBookWidget> */}
     </ParallaxProvider>
   </React.StrictMode>
 );
