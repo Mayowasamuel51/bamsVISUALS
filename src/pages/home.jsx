@@ -19,6 +19,7 @@ const Home = () => {
                     rewind: true,
                     arrows: false,
                     pagination: false,
+                    height : "100vh",
                 }}>
                     <SplideSlide>
                         <motion.img
