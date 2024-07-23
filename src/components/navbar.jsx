@@ -2,7 +2,7 @@ import { useState, useEffect } from "react"
 import { NavLink } from "react-router-dom"
 import { FaBars } from "react-icons/fa";
 import { FaXmark } from "react-icons/fa6";
-import { AnimatePresence } from "framer-motion"
+import { motion, AnimatePresence } from "framer-motion"
 import Mobilenav from "./mobilenav";
 import logo from "../assets/images/logo2.png";
 
@@ -23,7 +23,7 @@ const Navbar = () => {
     }, [])
 
     return (
-        <header className={`z-20 fixed w-full top-0 right-0 left-0 flex justify-between items-center md:px-20 px-4 md:py-1 ${bg && "shadow-md"} duration-300`}>
+        <header className={`z-20 fixed w-full top-0 right-0 left-0 flex justify-between items-center md:px-20 px-4 py-1 ${bg && "shadow-md"} duration-300`}>
             <div className={`${bg && "bg-white h-full"} duration-300 h-0 origin-top absolute inset-0 -z-10`}></div>
             <div className="">
                 <img src={logo} className="w-24 md:w-28" alt="logo" />
@@ -38,15 +38,15 @@ const Navbar = () => {
                     </ul>
                 </nav>
             </div>
-            <div onClick={handleNav} className="md:hidden block">
+            <motion.div whileHover={{scale: 1.1}} whileTap={{rotate:90}}  onClick={handleNav} className="md:hidden block relative z-10">
                 {toggleNav ?
-                    <FaXmark size={20} color="white" className="relative z-10" />
+                    <FaXmark size={25} color="white" />
                     :
-                    <FaBars size={20} />}
-            </div>
+                    <FaBars size={29} />}
+            </motion.div>
 
             <AnimatePresence>
-                {toggleNav && <Mobilenav handleNav/>}
+                {toggleNav && <Mobilenav handleNav={handleNav}/>}
             </AnimatePresence>
 
         </header>
