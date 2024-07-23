@@ -32,7 +32,7 @@ const About = () => {
     const isInView = useInView(ref, {once: true})
     const SubisInView = useInView(subRef, {once: true})
   return (
-    <main>
+    <main className="">
         <div className="home min-h-screen flex justify-center items-center">
             <motion.div initial={{ opacity: 0, y: -30 }} animate={{ opacity: 1, y: 0 }} transition={{ type: "spring", duration: 0.5, stiffness: 500, damping: 10 }} className="relative z-10 text-white text-center flex flex-col gap-5">
                 <h1 className="md:text-4xl text-3xl font-bold">About Me</h1>
@@ -40,7 +40,7 @@ const About = () => {
             </motion.div>
         </div>
 
-        <div className="md:py-20 md:px-10">
+        <div className="md:py-20 py-10 md:px-10 px-4">
             <motion.div ref={ref} variants={containerVariant} initial="initial" animate={isInView ? "animate" : "initial"} className="flex md:flex-row flex-col md:gap-20">
                 <motion.div variants={divChildVariant} className="bg-[#907E69] md:w-1/2 h-[500px]"></motion.div>
                 <motion.div variants={divChildVariant} className="flex-1 text-right">
@@ -50,7 +50,7 @@ const About = () => {
             </motion.div>
         </div>
 
-        <div className="md:py-20 md:px-10">
+        <div className="md:py-20 py-10 md:px-10 px-4">
             <motion.div ref={subRef} variants={containerVariant} initial="initial" animate={SubisInView ? "animate" : "initial"} className="flex md:flex-row flex-col md:gap-20">
                 <motion.div variants={divChildVariant} className="flex-1 flex flex-col gap-4">
                     <h1 className="font-bold md:text-3xl text-base">My Style</h1>

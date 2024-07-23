@@ -1,12 +1,19 @@
+// import { useState, useEffect } from 'react';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
 import { motion } from 'framer-motion';
 import { Link } from "react-router-dom"
 
+// const images = [
+//     './assets/images/home-bg.jpg',
+//     './assets/images/home-bg2.jpg'
+// ];
+
 const Home = () => {
+    // const [currentImageIndex, setCurrentImageIndex] = useState(0);
     return (
         <main className="">
-            <div className="home min-h-screen flex justify-center items-center">
+            <div className={`home bg-cover min-h-screen flex justify-center items-center`}>
                 <motion.div initial={{ opacity: 0, y: -30 }} animate={{ opacity: 1, y: 0 }} transition={{ type: "spring", duration: 0.5, stiffness: 500, damping: 10 }} className="relative z-10 text-white text-center flex flex-col gap-5">
                     <h1 className="md:text-4xl text-2xl font-semibold">Crafting cinematic tales that inspire </h1>
                     <Link to="/gallery#works">
