@@ -2,7 +2,7 @@ import { useState } from "react"
 import Navbar from "../components/navbar"
 import Footer from "../components/footer"
 import BgChange from "../components/bgChange"
-import { animate, motion } from "framer-motion"
+import { motion } from "framer-motion"
 import { Link, Outlet, useLocation } from "react-router-dom"
 
 const containerVariant = {
@@ -14,6 +14,12 @@ const containerVariant = {
     transition:{ 
       type: "spring", duration: 0.3, stiffness: 50, dampness: 10 , delayChildren: 0.4, staggerChildren: 0.2
     }
+  },
+  exit:{
+    opacity: 0, y: -30,
+    transition:{
+      when:"beforeChildren", duration: 0.3
+    }
   }
 }
 
@@ -23,6 +29,9 @@ const mainChildVariant = {
   },
   animate: {
     scale: 1
+  },
+  exit: {
+    scale: 0,
   }
 }
 
@@ -34,6 +43,10 @@ const subChildVariant = {
   animate:{
     opacity: 1,
     y: 0
+  },
+  exit: {
+    opacity: 0,
+    y: -30
   }
 }
 
@@ -57,7 +70,7 @@ const SiteLayout = () => {
       <div className="home relative bg-cover min-h-screen flex justify-center items-center overflow-hidden">
         <BgChange />
         {pathname === "/" && (
-          <motion.div variants={containerVariant} initial="initial" animate="animate" className="relative z-10 text-white text-center flex flex-col gap-5">
+          <motion.div variants={containerVariant} initial="initial" animate="animate" exit="exit" className="relative z-10 text-white text-center flex flex-col gap-5">
             <motion.h1 variants={mainChildVariant} className="origin-top md:text-5xl text-2xl font-medium tracking-wide md:block hidden roboto">
               {words.map((word, index) => (
                 <span
@@ -82,19 +95,19 @@ const SiteLayout = () => {
           </motion.div>
         )}
         {pathname === "/gallery" && (
-          <motion.div variants={containerVariant} initial="initial" animate="animate" className="relative z-10 text-white text-center flex flex-col gap-5">
+          <motion.div variants={containerVariant} initial="initial" animate="animate" exit="exit" className="relative z-10 text-white text-center flex flex-col gap-5">
             <motion.h1 variants={mainChildVariant} className="origin-top md:text-4xl text-3xl font-medium">Gallery</motion.h1>
             <motion.p variants={subChildVariant} className='cursive text-2xl md:text-5xl'>Your event through my lens</motion.p>
           </motion.div>
         )}
         {pathname === "/contact" && (
-          <motion.div variants={containerVariant} initial="initial" animate="animate" className="relative z-10 text-white text-center flex flex-col gap-5">
+          <motion.div variants={containerVariant} initial="initial" animate="animate" exit="exit" className="relative z-10 text-white text-center flex flex-col gap-5">
             <motion.h1 variants={mainChildVariant} className="origin-top md:text-4xl text-3xl font-medium">Contact Me</motion.h1>
             <motion.p variants={subChildVariant} className='cursive text-2xl md:text-5xl'>Dreams become reality with me</motion.p>
           </motion.div>
         )}
         {pathname === "/about" && (
-          <motion.div variants={containerVariant} initial="initial" animate="animate" className="relative z-10 text-white text-center flex flex-col gap-5">
+          <motion.div variants={containerVariant} initial="initial" animate="animate" exit="exit" className="relative z-10 text-white text-center flex flex-col gap-5">
             <motion.h1 variants={mainChildVariant} className="origin-top md:text-4xl text-3xl font-medium">About Me</motion.h1>
             <motion.p variants={subChildVariant} className='cursive text-2xl md:text-5xl'>Find out what makes me ticks</motion.p>
           </motion.div>
