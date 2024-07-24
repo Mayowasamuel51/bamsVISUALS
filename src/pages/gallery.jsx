@@ -1,23 +1,13 @@
 import gallery_one from "../assets/images/gallery1.svg"
 import gallery_two from "../assets/images/gallery2.svg"
 import gallery_three from "../assets/images/gallery3.svg"
-import BgChange from "../components/bgChange"
-import { motion } from "framer-motion"
 import ReactPlayer from 'react-player'
 import { Link } from "react-router-dom"
-
 
 
 const Gallery = () => {
     return (
         <main>
-            <div className="home relative min-h-screen flex justify-center items-center">
-                <BgChange />
-                <motion.div initial={{ opacity: 0, y: -30 }} animate={{ opacity: 1, y: 0 }} transition={{ type: "spring", duration: 0.5, stiffness: 500, damping: 10 }} className="relative z-10 text-white text-center flex flex-col gap-5">
-                    <h1 className="md:text-4xl text-3xl font-medium">Gallery</h1>
-                    <p className='cursive text-2xl md:text-5xl'>Your event through my lens</p>
-                </motion.div>
-            </div>
             <div className='py-20'>
                 <div className='text-center'>
                     <h1 className='cursive text-4xl md:text-6xl my-2'>Recent Works</h1>

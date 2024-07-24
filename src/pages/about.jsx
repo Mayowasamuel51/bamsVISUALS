@@ -1,8 +1,6 @@
 import { useRef } from "react";
 import style from "../assets/images/about.svg";
 import { motion, useInView } from "framer-motion";
-import BgChange from "../components/bgChange";
-
 
 const containerVariant = {
     initial: {
@@ -34,14 +32,6 @@ const About = () => {
     const SubisInView = useInView(subRef, {once: true})
   return (
     <main className="">
-        <div className="home relative min-h-screen flex justify-center items-center">
-            <BgChange />
-            <motion.div initial={{ opacity: 0, y: -30 }} animate={{ opacity: 1, y: 0 }} transition={{ type: "spring", duration: 0.5, stiffness: 500, damping: 10 }} className="relative z-10 text-white text-center flex flex-col gap-5">
-                <h1 className="md:text-4xl text-3xl font-medium">About Me</h1>
-                <p className='cursive text-2xl md:text-5xl'>Find out what makes me ticks</p>
-            </motion.div>
-        </div>
-
         <div className="md:py-20 py-10 md:px-10 px-4">
             <motion.div ref={ref} variants={containerVariant} initial="initial" animate={isInView ? "animate" : "initial"} className="flex md:flex-row flex-col gap-10 md:gap-20">
                 <motion.div variants={divChildVariant} className="bg-[#907E69] md:w-1/2 h-[500px]"></motion.div>

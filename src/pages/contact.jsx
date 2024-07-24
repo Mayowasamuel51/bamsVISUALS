@@ -1,17 +1,6 @@
-import { motion } from "framer-motion"
-import BgChange from "../components/bgChange"
-
 const Contact = () => {
     return (
         <main>
-            <div className="home relative min-h-screen flex justify-center items-center">
-                <BgChange />
-                <motion.div initial={{ opacity: 0, y: -30 }} animate={{ opacity: 1, y: 0 }} transition={{ type: "spring", duration: 0.5, stiffness: 500, damping: 10 }} className="relative z-10 text-white text-center flex flex-col gap-5">
-                    <h1 className="md:text-4xl text-3xl font-medium">Contact Me</h1>
-                    <p className='cursive text-2xl md:text-5xl'>Dreams become reality with me</p>
-                </motion.div>
-            </div>
-
             <div className="md:px-10 px-4 md:py-20">
                 <div className="text-center md:w-[600px] mx-auto py-6 md:py-8 flex flex-col gap-4 md:gap-8">
                     <h1 className="font-medium md:text-4xl">Let’s create <span className="font-normal cursive text-4xl md:text-6xl text-text">Magic</span></h1>
