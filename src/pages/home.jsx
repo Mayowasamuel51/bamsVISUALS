@@ -18,6 +18,8 @@ const Home = () => {
                         arrows: false,
                         speed: 3000,
                         interval: 4000,
+                        drag : 'free',
+                        snap : true,
                     }}>
                         <SplideSlide>
                             <div className="text-center px-6 py-10 md:px-10 md:py-24 flex flex-col gap-4 justify-between">
