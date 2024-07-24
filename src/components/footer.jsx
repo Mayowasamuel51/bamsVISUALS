@@ -13,12 +13,13 @@ const Footer = () => {
                     </ul>
                 </nav>
 
-                <div className='flex items-center gap-6'>
+                <div className='footer-icons flex items-center gap-3 md:gap-6'>
+                    <div className='w-5 md:w-10 aspect-square bg-blue-600'></div>
                     <div className='w-5 md:w-10 aspect-square bg-blue-600'></div>
                     <div className='w-5 md:w-10 aspect-square bg-blue-600'></div>
                 </div>
             </div>
-            <p className="text-center py-2 md:py-4 md:text-base text-xs">&copy;2024, Bam Visuals. All rights reserved</p>
+            <p className="text-center py-2 md:py-4 md:text-base text-xs">&copy; {new Date().getFullYear()}, Bam Visuals. All rights reserved</p>
         </div>
     )
 }

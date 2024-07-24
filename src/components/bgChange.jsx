@@ -10,7 +10,7 @@ const bgChange = () => {
   return (
     <Splide className='absolute top-0 left-0 bottom-0 w-full h-full' options={{
         type: "fade",
-        speed: 3000,
+        speed: 2000,
         interval: 20000,
         autoplay: true,
         rewind: true,
