@@ -1,8 +1,9 @@
+import HoneyBookWidget from "../HoneyBookWidget"
 const Contact = () => {
     return (
         <main>
             <div className="md:px-10 px-4 md:py-20">
-                {/* <HoneyBookWidget/> */}
+                <HoneyBookWidget/>
                 
                 <div className="text-center md:w-[600px] mx-auto py-6 md:py-8 flex flex-col gap-4 md:gap-8">
                     <h1 className="font-medium md:text-4xl">Let’s create <span className="font-normal cursive text-4xl md:text-6xl text-text">Magic</span></h1>
