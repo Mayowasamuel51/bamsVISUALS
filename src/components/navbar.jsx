@@ -9,8 +9,8 @@ import logo from "../assets/images/logo2.png";
 const Navbar = () => {
     const [bg, handleBg] = useState(false)
     const [toggleNav, setToggleNav] = useState(false)
-    const handleNav = ()=> {
-        setToggleNav(prev=> !prev)
+    const handleNav = () => {
+        setToggleNav(prev => !prev)
     }
 
     useEffect(() => {
@@ -23,7 +23,7 @@ const Navbar = () => {
     }, [])
 
     return (
-        <header className={`z-20 fixed w-full top-0 right-0 left-0 flex justify-between items-center md:px-20 px-4 py-1 ${bg && "shadow-md"} duration-300`}>
+        <header className={`z-20 fixed w-full top-0 right-0 left-0 flex justify-between items-center md:px-20 px-4 py-2 ${bg && "shadow-md"} duration-300`}>
             <div className={`${bg && "bg-white h-full"} duration-300 h-0 origin-top absolute inset-0 -z-10`}></div>
             <Link to="/">
                 <div className="">
@@ -40,7 +40,7 @@ const Navbar = () => {
                     </ul>
                 </nav>
             </div>
-            <motion.div whileHover={{scale: 1.1}} whileTap={{rotate:90}}  onClick={handleNav} className="md:hidden block relative z-10">
+            <motion.div whileHover={{ scale: 1.1 }} whileTap={{ rotate: 90 }} onClick={handleNav} className="md:hidden block relative z-10">
                 {toggleNav ?
                     <FaXmark size={20} color="white" />
                     :
@@ -48,7 +48,7 @@ const Navbar = () => {
             </motion.div>
 
             <AnimatePresence>
-                {toggleNav && <Mobilenav handleNav={handleNav}/>}
+                {toggleNav && <Mobilenav handleNav={handleNav} />}
             </AnimatePresence>
 
         </header>

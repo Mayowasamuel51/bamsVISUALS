@@ -1,3 +1,4 @@
+import { useState } from "react"
 import Navbar from "../components/navbar"
 import Footer from "../components/footer"
 import BgChange from "../components/bgChange"
@@ -6,8 +7,18 @@ import { Link, Outlet, useLocation } from "react-router-dom"
 
 const SiteLayout = () => {
   const { pathname } = useLocation()
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+
+  const handleMouseEnter = (index) => {
+    setHoveredIndex(index);
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredIndex(null);
+  };
   const text = "Crafting cinematic tales that inspire";
   const words = text.split("");
+
   return (
     <div className="">
       <Navbar />
@@ -15,9 +26,24 @@ const SiteLayout = () => {
         <BgChange />
         {pathname === "/" && (
           <motion.div initial={{ opacity: 0, y: -30 }} animate={{ opacity: 1, y: 0 }} transition={{ type: "spring", duration: 0.5, stiffness: 500, damping: 10 }} className="relative z-10 text-white text-center flex flex-col gap-5">
-            <h1 className="md:text-5xl text-2xl font-medium tracking-wide md:block hidden">
-              {words.map((word, index) => (
+            <h1 className="md:text-5xl text-2xl font-medium tracking-wide md:block hidden roboto">
+              {/* {words.map((word, index) => (
                 <span key={index} className="word cursor-pointer">{word === " " ? `\u00A0` : word}</span>
+              ))} */}
+              {words.map((word, index) => (
+                <span
+                  key={index}
+                  className={`word cursor-pointer ${hoveredIndex === index ? 'hovered' : ''
+                    } ${hoveredIndex !== null &&
+                      (index === hoveredIndex - 1 || index === hoveredIndex + 1)
+                      ? 'adjacent'
+                      : ''
+                    }`}
+                  onMouseEnter={() => handleMouseEnter(index)}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  {word === ' ' ? `\u00A0` : word}
+                </span>
               ))}
             </h1>
             <h1 className="md:text-5xl text-2xl font-medium tracking-wide md:hidden block">Crafting cinematic tales that inspire</h1>

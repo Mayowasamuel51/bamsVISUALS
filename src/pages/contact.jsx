@@ -6,7 +6,7 @@ const Contact = () => {
                 
                 <div className="text-center md:w-[600px] mx-auto py-6 md:py-8 flex flex-col gap-4 md:gap-8">
                     <h1 className="font-medium md:text-4xl">Let’s create <span className="font-normal cursive text-4xl md:text-6xl text-text">Magic</span></h1>
-                    <p className="md:text-xl text-base">I am excited to be a part of your big day. Kindly fill out the contact form below and we will be in touch with more details. Please allow 24 hours for a response</p>
+                    <p className="md:text-xl text-base font-light">I am excited to be a part of your big day. Kindly fill out the contact form below and we will be in touch with more details. Please allow 24 hours for a response</p>
                 </div>
                 <form action="" className="flex flex-col gap-5 md:gap-10">
                     <div>
