@@ -16,8 +16,8 @@ const HoneyBookWidget = ({ pid }) => {
   }, [pid]);
 
   return (
-    <div className="hb-p">
-      <img height="1" width="1" style={{ display: 'none' }} src={`https://www.honeybook.com/p.png?pid=${pid}`} alt="" />
+    <div className="hb-p-669543216f29f60019e5b586-3">
+      <img height="1" width="1" style={{display: "none"}} src="https://www.honeybook.com/p.png?pid=669543216f29f60019e5b586"/>
     </div>
   );
 };
