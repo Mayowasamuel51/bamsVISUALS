@@ -20,22 +20,22 @@ const Gallery = () => {
 
             <div id="works" className="flex flex-col gap-10">
                 <div className="relative">
-                    <ReactPlayer url="https://www.dropbox.com/scl/fi/te2r7y8c4j3vq457hvd71/teaser-2160p-1.mp4?rlkey=93s9yy5a7xghggjzfgyx113ub&st=zg4tmxi6&dl=0" width={`100%`} height={600} controls={true} playing={true} light={gallery_one} playIcon={<button className="bg-button border-2 border-button hover:bg-transparent hover:text-text duration-200 p-4 w-fit mx-auto font-bold md:px-12 md:py-6 text-white">PLAY VIDEO</button>}  />
+                    <ReactPlayer url="https://www.dropbox.com/scl/fi/te2r7y8c4j3vq457hvd71/teaser-2160p-1.mp4?rlkey=93s9yy5a7xghggjzfgyx113ub&st=zg4tmxi6&dl=0" width={`100%`} height={700} controls={true} playing={true} light={gallery_one} playIcon={<button className="bg-button border-2 border-button hover:bg-transparent hover:text-text duration-200 p-4 w-fit mx-auto font-bold md:px-12 md:py-6 text-white">PLAY VIDEO</button>}  />
                 </div>
                 <div className="relative">
-                    <ReactPlayer url="https://www.dropbox.com/scl/fi/al3ytsl8ag93mn0ntfz33/IMG_0520.PNG?rlkey=lmow2oxxyv7sp7wwad41ky4h6&st=tghnhjyw&dl=0" width={`100%`} height={600} controls={true} playing={true} light={gallery_two} playIcon={<button className="bg-button border-2 border-button hover:bg-transparent hover:text-text duration-200 p-4 w-fit mx-auto font-bold md:px-12 md:py-6 text-white">PLAY VIDEO</button>}  />
+                    <ReactPlayer url="https://www.dropbox.com/scl/fi/al3ytsl8ag93mn0ntfz33/IMG_0520.PNG?rlkey=lmow2oxxyv7sp7wwad41ky4h6&st=tghnhjyw&dl=0" width={`100%`} height={700} controls={true} playing={true} light={gallery_two} playIcon={<button className="bg-button border-2 border-button hover:bg-transparent hover:text-text duration-200 p-4 w-fit mx-auto font-bold md:px-12 md:py-6 text-white">PLAY VIDEO</button>}  />
                 </div>
                 <div className="relative">
-                    <ReactPlayer url="https://www.dropbox.com/scl/fi/qot2n92kio5msjwank9v5/IMG_0521.jpg?rlkey=1c23u59gb5nz8eqenxazhnwkj&st=k6dob4u6&dl=0" width={`100%`} height={600} controls={true} playing={true} light={gallery_three} playIcon={<button className="bg-button border-2 border-button hover:bg-transparent hover:text-text duration-200 p-4 w-fit mx-auto font-bold md:px-12 md:py-6 text-white">PLAY VIDEO</button>}  />
+                    <ReactPlayer url="https://www.dropbox.com/scl/fi/qot2n92kio5msjwank9v5/IMG_0521.jpg?rlkey=1c23u59gb5nz8eqenxazhnwkj&st=k6dob4u6&dl=0" width={`100%`} height={700} controls={true} playing={true} light={gallery_three} playIcon={<button className="bg-button border-2 border-button hover:bg-transparent hover:text-text duration-200 p-4 w-fit mx-auto font-bold md:px-12 md:py-6 text-white">PLAY VIDEO</button>}  />
                 </div>
                 <div className="relative">
-                    <ReactPlayer url="https://vimeo.com/990179377/a9a9266311" width={`100%`} height={600} controls={true} playing={true} light={gallery_four} playIcon={<button className="bg-button border-2 border-button hover:bg-transparent hover:text-text duration-200 p-4 w-fit mx-auto font-bold md:px-12 md:py-6 text-white">PLAY VIDEO</button>}  />
+                    <ReactPlayer url="https://vimeo.com/990177049/e349d31ec3" width={`100%`} height={700} controls={true} playing={true} light={gallery_four} playIcon={<button className="bg-button border-2 border-button hover:bg-transparent hover:text-text duration-200 p-4 w-fit mx-auto font-bold md:px-12 md:py-6 text-white">PLAY VIDEO</button>}  />
                 </div>
                 <div className="relative">
-                    <ReactPlayer url="https://vimeo.com/990845187/f49e83fd83" width={`100%`} height={600} controls={true} playing={true} light={gallery_five} playIcon={<button className="bg-button border-2 border-button hover:bg-transparent hover:text-text duration-200 p-4 w-fit mx-auto font-bold md:px-12 md:py-6 text-white">PLAY VIDEO</button>}  />
+                    <ReactPlayer url="https://vimeo.com/990179377/a9a9266311" width={`100%`} height={700} controls={true} playing={true} light={gallery_five} playIcon={<button className="bg-button border-2 border-button hover:bg-transparent hover:text-text duration-200 p-4 w-fit mx-auto font-bold md:px-12 md:py-6 text-white">PLAY VIDEO</button>}  />
                 </div>
                 <div className="relative">
-                    <ReactPlayer url="https://vimeo.com/990177049/e349d31ec3" width={`100%`} height={600} controls={true} playing={true} light={gallery_six} playIcon={<button className="bg-button border-2 border-button hover:bg-transparent hover:text-text duration-200 p-4 w-fit mx-auto font-bold md:px-12 md:py-6 text-white">PLAY VIDEO</button>}  />
+                    <ReactPlayer url="https://vimeo.com/990845187/f49e83fd83" width={`100%`} height={700} controls={true} playing={true} light={gallery_six} playIcon={<button className="bg-button border-2 border-button hover:bg-transparent hover:text-text duration-200 p-4 w-fit mx-auto font-bold md:px-12 md:py-6 text-white">PLAY VIDEO</button>}  />
                 </div>
             </div>
 
