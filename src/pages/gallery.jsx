@@ -1,9 +1,9 @@
 import gallery_one from "../assets/images/gallery1.svg"
 import gallery_two from "../assets/images/gallery2.svg"
 import gallery_three from "../assets/images/gallery3.svg"
-import gallery_four from "../assets/images/gallery3.jpeg"
-import gallery_five from "../assets/images/gallery3.jpeg"
-import gallery_six from "../assets/images/gallery3.jpeg"
+import gallery_four from "../assets/images/gallery4.jpeg"
+import gallery_five from "../assets/images/gallery5.jpeg"
+import gallery_six from "../assets/images/gallery6.jpeg"
 import ReactPlayer from 'react-player'
 import { Link } from "react-router-dom"
 
