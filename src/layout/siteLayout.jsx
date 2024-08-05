@@ -5,6 +5,7 @@ import BgChange from "../components/bgChange"
 import { motion } from "framer-motion"
 import { Link, Outlet, useLocation } from "react-router-dom"
 
+
 const containerVariant = {
   initial:{ 
     opacity: 0, y: -30 
@@ -22,7 +23,6 @@ const containerVariant = {
     }
   }
 }
-
 const mainChildVariant = {
   initial: {
     scale: 0,
@@ -34,7 +34,6 @@ const mainChildVariant = {
     scale: 0,
   }
 }
-
 const subChildVariant = {
   initial:{
     opacity: 0,
@@ -65,13 +64,13 @@ const SiteLayout = () => {
   const words = text.split("");
 
   return (
-    <div className="">
+    <div className="overflow-hidde ">
       <Navbar />
       <div className="home relative bg-cover min-h-screen flex justify-center items-center overflow-hidden">
         <BgChange />
         {pathname === "/" && (
           <motion.div variants={containerVariant} initial="initial" animate="animate" exit="exit" className="relative z-10 text-white text-center flex flex-col gap-5">
-            <motion.h1 variants={mainChildVariant} className="origin-top md:text-5xl text-2xl font-medium tracking-wide md:block hidden roboto">
+            <motion.h1 variants={mainChildVariant} className="origin-top md:text-4xl text-2xl font-medium tracking-wide md:block hidden roboto">
               {words.map((word, index) => (
                 <span
                   key={index}

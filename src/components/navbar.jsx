@@ -8,7 +8,6 @@ import logo from "../assets/images/logo2.png";
 import logo2 from "../assets/images/logo-gold.png";
 
 
-
 const Navbar = () => {
     const [bg, handleBg] = useState(false)
     const imgVariant = {
@@ -30,17 +29,27 @@ const Navbar = () => {
     }
 
     useEffect(() => {
-        window.addEventListener("scroll", () => {
+        const handleScroll = () => {
             if (window.scrollY > 100) {
-                handleBg(true)
+                handleBg(true);
+            } else {
+                handleBg(false);
+            }
+        };
 
-            } else handleBg(false)
-        })
+
+        window.addEventListener("load", handleScroll);
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("load", handleScroll);
+            window.removeEventListener("scroll", handleScroll);
+        };
     }, [])
 
     return (
-        <header className={`z-20 fixed w-full top-0 right-0 left-0 flex justify-between items-center md:px-20 px-4 py-2 ${bg && "shadow-md"} duration-300`}>
-            <div className={`${bg && "bg-white h-full"} duration-300 h-0 origin-top absolute inset-0 -z-10`}></div>
+        <header className={`z-20 fixed md:top-12 top-0 right-0 left-0 ${bg && "md:right-12 md:left-12 md:rounded-xl overflow-hidden shadow-lg"} flex justify-between items-center md:px-20 px-4 py-2 duration-300`}>
+            <div className={`${bg ? "bg-white h-full" : "h-0"} duration-300 h-0 origin-right absolute inset-0 -z-10 md:rounded-xl`}></div>
             <Link to="/">
                 <AnimatePresence>
                     <motion.div

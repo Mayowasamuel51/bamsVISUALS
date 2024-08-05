@@ -8,7 +8,7 @@ import img2 from "../assets/images/home-bg2.jpg"
 
 const bgChange = () => {
   return (
-    <Splide className='absolute top-0 left-0 bottom-0 w-full h-full' options={{
+    <Splide className='absolute md:top-5 md:right-5 md:left-5 bottom-0 md:rounded-3xl overflow-hidden' options={{
         type: "fade",
         speed: 2000,
         interval: 20000,
