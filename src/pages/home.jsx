@@ -3,7 +3,8 @@ import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
 import { Helmet } from 'react-helmet';
 import '../styles/home.css';
-import image from "../assets/images/test.webp"
+// import image from "../assets/images/test.webp"
+import image from "../assets/images/show.webp"
 const Home = () => {
     return (
         <motion.main 
@@ -59,9 +60,7 @@ const Home = () => {
                 </div>
             </div> 
 
-            <div>
-                <img src={image}/>
-            </div>
+           
         </motion.main>
     );
 }

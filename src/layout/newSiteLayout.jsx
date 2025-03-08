@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 import { Link, Outlet, useLocation } from "react-router-dom";
 import "../styles/home.css";
 import Gallery from "../pages/gallery";
+import Home from "../pages/home";
 const containerVariant = {
   initial: { opacity: 0, y: -30 },
   animate: {
@@ -81,22 +82,41 @@ const NewSiteLayout = () => {
               </Link>
             </div>
           )}
-        </motion.div>
-     
-      </div>
 
-      <div className="hero text-center flex flex-col py-20 md:px-20 px-4 lg:w-[70%] w-full lg:mx-auto">
-        <h1 className="cursive text-4xl md:text-6xl">
-          Capturing life’s precious moments, one frame at a time
-        </h1>
-        <p className="md:text-xl text-base font-light">
-          Bams Visuals is widely considered one of the top 3 African wedding
-          videographers in the world. We routinely travel documenting and
-          crafting beautiful luxury films for clients around the United States.
-          Our style is a fusion of cinematic flair, documentary grit, and a deep
-          love for the human experience.
-        </p>
+          {pathname === "/gallery" && (
+            <div className="flex flex-col gap-5 min-h-screen justify-center">
+              <motion.h1 className="md:text-4xl text-3xl font-medium">
+                Gallery
+              </motion.h1>
+              <motion.p className="cursive text-2xl md:text-5xl">
+                Your event through my lens
+              </motion.p>
+            </div>
+          )}
+          {pathname === "/contact" && (
+            <div className="flex flex-col gap-5 min-h-screen justify-center">
+              <motion.h1 className="md:text-4xl text-3xl font-medium">
+                Contact Me
+              </motion.h1>
+              <motion.p className="cursive text-2xl md:text-5xl">
+                Dreams become reality with me
+              </motion.p>
+            </div>
+          )}
+          {pathname === "/about" && (
+            <div className="flex flex-col gap-5 min-h-screen justify-center">
+              <motion.h1 className="md:text-4xl text-3xl font-medium">
+                About Me
+              </motion.h1>
+              <motion.p className="cursive text-2xl md:text-5xl">
+                Find out what makes me tick
+              </motion.p>
+            </div>
+          )}
+        </motion.div>
       </div>
+      {/* <Home/> */}
+
       <div className="testimonial md:py-28 py-10">
         <div className="relative z-10 bg-[#F6E7BE] lg:w-[700px] w-[90%] mx-auto cursor-grab">
           <Splide
@@ -157,11 +177,12 @@ const NewSiteLayout = () => {
           </Splide>
         </div>
       </div>
+
       <div>
         <div>
-            <Gallery/>
+          <Gallery />
         </div>
-        <Footer/>
+     
       </div>
 
       {/* <motion.div
@@ -171,7 +192,11 @@ const NewSiteLayout = () => {
         exit={{ opacity: 0, y: -20 }}
         transition={{ duration: 0.3 }}
         className="w-full min-h-screen"
-      /> */}
+      >
+        <Outlet />
+        </motion.div> */}
+    <Outlet />
+        <Footer />
     </>
   );
 };

@@ -5,7 +5,6 @@ import BgChange from "../components/bgChange";
 import { motion } from "framer-motion";
 import { Link, Outlet, useLocation } from "react-router-dom";
 
-
 const containerVariant = {
   initial: { opacity: 0, y: -30 },
   animate: {
@@ -114,7 +113,7 @@ const SiteLayout = () => {
       </motion.div>
 
       {/* Outlet for Dynamic Page Content */}
-      <motion.div
+      {/* <motion.div
         key={pathname}
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -124,7 +123,7 @@ const SiteLayout = () => {
       >
         <Outlet />
       </motion.div>
-      <p>lorem</p>
+      */}
       <Footer />
     </div>
   );
