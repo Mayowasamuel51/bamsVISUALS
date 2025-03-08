@@ -5,6 +5,7 @@ import { Helmet } from 'react-helmet';
 import '../styles/home.css';
 // import image from "../assets/images/test.webp"
 import image from "../assets/images/show.webp"
+import Gallery from './gallery';
 const Home = () => {
     return (
         <motion.main 
@@ -17,7 +18,9 @@ const Home = () => {
                 <meta charSet="utf-8" />
                 <title>Home</title>
             </Helmet>
-            
+            <div>
+                <Gallery/>
+            </div>
             {/* Hero Section */}
             {/* <div className="hero text-center flex flex-col py-20 md:px-20 px-4 lg:w-[70%] w-full lg:mx-auto">
                 <h1 className="cursive text-4xl md:text-6xl">Capturing life’s precious moments, one frame at a time</h1>
@@ -25,7 +28,7 @@ const Home = () => {
             </div> */}
             
             {/* Testimonial Carousel */}
-             <div className='testimonial md:py-28 py-10'>
+             {/* <div className='testimonial md:py-28 py-10'>
                 <div className='relative z-10 bg-[#F6E7BE] lg:w-[700px] w-[90%] mx-auto cursor-grab'>
                     <Splide options={{
                         type: 'loop',
@@ -58,8 +61,7 @@ const Home = () => {
                         </SplideSlide>
                     </Splide>
                 </div>
-            </div> 
-
+            </div>  */}
            
         </motion.main>
     );
