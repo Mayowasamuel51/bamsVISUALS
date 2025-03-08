@@ -26,33 +26,39 @@ const About = () => {
         <main>
             {/* About Section */}
             <section className="md:py-20 py-10 md:px-10 px-4">
-                <motion.div 
-                    ref={mainRef} 
-                    variants={containerVariant} 
-                    initial="initial" 
-                    animate={isMainInView ? "animate" : "initial"} 
-                    className="flex md:flex-row flex-col gap-10 md:gap-20"
-                >
-                    <motion.img 
-                        variants={divChildVariant} 
-                        src={aboutImage} 
-                        alt="About Me" 
-                        className="w-full h-auto max-w-md md:max-w-lg lg:max-w-xl"
-                    />
-                    <motion.div variants={divChildVariant} className="flex-1 text-right">
-                        <p className="text-base md:text-lg font-light">
-                            Adventure seeker, storyteller, and frame-obsessor! Based in the stunning Pacific Northwest, 
-                            with Tacoma as my backyard and Seattle's creative vibes fueling my passion. Always ready to 
-                            capture life's breathtaking moments and tales. Whether it's a wedding, a brand story, or a 
-                            personal adventure, I'm here to help you tell your story and make it unforgettable! Let's make 
-                            some cinematic memories and become the ultimate storytelling squad!
-                        </p>
-                        <h3 className="cursive text-button text-3xl md:text-[80px] leading-[100px]">
-                            With love and prayers, <br /> Bams Visuals
-                        </h3>
-                    </motion.div>
-                </motion.div>
-            </section>
+    <motion.div 
+        ref={mainRef} 
+        variants={containerVariant} 
+        initial="initial" 
+        animate={isMainInView ? "animate" : "initial"} 
+        className="flex flex-col md:flex-row items-center md:items-start gap-10 md:gap-16 max-w-6xl mx-auto"
+    >
+        {/* Image Section */}
+        <motion.img 
+            variants={divChildVariant} 
+            src={aboutImage} 
+            alt="About Me" 
+            className="w-full max-w-sm md:max-w-md lg:max-w-lg h-auto object-cover"
+        />
+
+        {/* Text Section */}
+        <motion.div 
+            variants={divChildVariant} 
+            className="flex-1 text-center md:text-right"
+        >
+            <p className="text-base md:text-lg font-light leading-relaxed">
+                Adventure seeker, storyteller, and frame-obsessor! Based in the stunning Pacific Northwest, 
+                with Tacoma as my backyard and Seattle's creative vibes fueling my passion. Always ready to 
+                capture life's breathtaking moments and tales. Whether it's a wedding, a brand story, or a 
+                personal adventure, I'm here to help you tell your story and make it unforgettable! Let's make 
+                some cinematic memories and become the ultimate storytelling squad!
+            </p>
+            <h3 className="cursive text-button text-3xl md:text-[60px] lg:text-[80px] leading-tight mt-6">
+                With love and prayers, <br /> Bams Visuals
+            </h3>
+        </motion.div>
+    </motion.div>
+</section>
 
             {/* My Style Section */}
             <section className="md:py-20 py-10 md:px-10 px-4">
