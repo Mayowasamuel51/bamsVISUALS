@@ -8,7 +8,12 @@ import ReactPlayer from "react-player";
 import { Link } from "react-router-dom";
 
 const videos = [
+  
+  { url: "https://vimeo.com/1030637546", light: gallery_six },
+  { url: "https://vimeo.com/1021620397", light: gallery_six },
+  { url: " https://vimeo.com/1010058915/c7c983dfc5", light: gallery_six },
   { url: "https://vimeo.com/990177049/e349d31ec3", light: gallery_six },
+
   { url: "https://www.dropbox.com/scl/fi/te2r7y8c4j3vq457hvd71/teaser-2160p-1.mp4?rlkey=93s9yy5a7xghggjzfgyx113ub&st=zg4tmxi6&dl=0", light: gallery_one },
   { url: "https://www.dropbox.com/scl/fi/al3ytsl8ag93mn0ntfz33/IMG_0520.PNG?rlkey=lmow2oxxyv7sp7wwad41ky4h6&st=tghnhjyw&dl=0", light: gallery_two },
   { url: "https://vimeo.com/990845187/f49e83fd83", light: gallery_five },
