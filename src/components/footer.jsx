@@ -1,4 +1,7 @@
 import { NavLink } from "react-router-dom"
+import { FaInstagram } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa6";
 
 const Footer = () => {
     return (
@@ -13,11 +16,21 @@ const Footer = () => {
                     </ul>
                 </nav>
 
-                <div className='footer-icons flex items-center gap-3 md:gap-6'>
-                    <div className='w-5 md:w-10 aspect-square bg-blue-600'></div>
-                    <div className='w-5 md:w-10 aspect-square bg-blue-600'></div>
-                    <div className='w-5 md:w-10 aspect-square bg-blue-600'></div>
-                </div>
+                <div className="footer-icons flex items-center gap-3 md:gap-6">
+    <div className="w-8 md:w-12 h-8 md:h-12 flex items-center justify-center rounded-full bg-blue-600 text-white">
+    <a href="https://www.instagram.com/bamsvisuals/" target="_blank" rel="noopener noreferrer" 
+       className="w-8 md:w-12 h-8 md:h-12 flex items-center justify-center rounded-full bg-blue-600 text-white">
+        <FaInstagram size={20} />
+    </a>
+    </div>
+    <div className="w-8 md:w-12 h-8 md:h-12 flex items-center justify-center rounded-full bg-blue-600 text-white">
+        <FaTwitter size={20} />
+    </div>
+    <div className="w-8 md:w-12 h-8 md:h-12 flex items-center justify-center rounded-full bg-blue-600 text-white">
+        <FaFacebook size={20} />
+    </div>
+</div>
+
             </div>
             <p className="text-center py-2 md:py-4 md:text-base text-xs">&copy; {new Date().getFullYear()}, Bam Visuals. All rights reserved</p>
         </div>
