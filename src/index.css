@@ -64,8 +64,19 @@ html {
 .home::after {
     content: "";
     position: absolute;
-    inset: 0;
+    top: 20px;
+    right: 20px;
+    left: 20px;
+    bottom: 0;
+    border-radius: 24px;
     background-color: rgba(0, 0, 0, 0.6);
+}
+
+@media only screen and (max-width:768px) {
+    .home::after {
+        inset: 0;
+        border-radius: 0;
+    }
 }
 
 .testimonial {

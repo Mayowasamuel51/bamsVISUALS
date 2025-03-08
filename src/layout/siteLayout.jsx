@@ -5,6 +5,7 @@ import BgChange from "../components/bgChange";
 import { motion } from "framer-motion";
 import { Link, Outlet, useLocation } from "react-router-dom";
 
+
 const containerVariant = {
   initial: { opacity: 0, y: -30 },
   animate: {
