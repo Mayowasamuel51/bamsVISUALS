@@ -9,9 +9,13 @@ export default {
       colors: {
         text: "#B68302",
         button: "#B68302"
-      }
+      },
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif'], // Add Poppins font
+      },
     },
   },
   plugins: [],
+
 }
 

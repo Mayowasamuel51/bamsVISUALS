@@ -6,11 +6,14 @@ import Home from "./pages/home";
 import Gallery from "./pages/gallery";
 import Contact from "./pages/contact";
 import About from "./pages/about";
+import NewSiteLayout from "./layout/newSiteLayout";
+
+
 
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <SiteLayout />,
+        element: <NewSiteLayout />,
         children : [
             {
                 index: true,

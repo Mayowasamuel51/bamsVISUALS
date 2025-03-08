@@ -1,53 +1,29 @@
-import { Splide, SplideSlide } from '@splidejs/react-splide';
-import '@splidejs/react-splide/css';
-import { motion } from 'framer-motion';
-import img0 from "../assets/images/home-bg0.jpg"
-import img01 from "../assets/images/home-bg01.jpg"
-import img1 from "../assets/images/home-bg.jpg"
-import img2 from "../assets/images/home-bg2.jpg"
+import { motion } from "framer-motion";
+import img0 from "../assets/images/test.webp";
+import img01 from "../assets/images/Snapinsta.webp";
+import img1 from "../assets/images/0A6A4645_2_bniny9.webp";
 
-const bgChange = () => {
+const images = [img0, img01, img1];
+
+const BgChange = () => {
   return (
-    <Splide className='absolute top-0 left-0 bottom-0 w-full h-full' options={{
-        type: "fade",
-        speed: 2000,
-        interval: 20000,
-        autoplay: true,
-        rewind: true,
-        arrows: false,
-        pagination: false,
-        height : "100vh",
-    }}>
-        <SplideSlide>
-            <motion.img
-                src={img0}
-                className='w-full h-full object-cover zoom-animation'
-                alt="hero-image"
-            />
-        </SplideSlide>
-        <SplideSlide>
-            <motion.img
-                src={img01}
-                className='w-full h-full object-cover zoom-animation'
-                alt="hero-image"
-            />
-        </SplideSlide>
-        <SplideSlide>
-            <motion.img
-                src={img1}
-                className='w-full h-full object-cover zoom-animation'
-                alt="hero-image"
-            />
-        </SplideSlide>
-        <SplideSlide>
-            <motion.img
-                src={img2}
-                className='w-full h-full object-cover zoom-animation'
-                alt="hero-image"
-            />
-        </SplideSlide>
-    </Splide>
-  )
-}
+    // absolute inset-0 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-0 w-full h-full
+    <div className="absolute inset-0   grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  w-full  h-full">
+      {images.map((image, index) => (
+        <motion.div 
+          key={index} 
+          className="overflow-hidden"
+          whileHover={{ scale: 1.05 }}
+        >
+          <img
+            src={image}
+            alt={`Background ${index}`}
+            className="w-full h-full object-cover"
+          />
+        </motion.div>
+      ))}
+    </div>
+  );
+};
 
-export default bgChange
+export default BgChange;
