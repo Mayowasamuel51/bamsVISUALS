@@ -180,7 +180,7 @@ const NewSiteLayout = () => {
 
       <div>
         <div>
-          <Gallery />
+          {/* <Gallery /> */}
         </div>
      
       </div>

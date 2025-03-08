@@ -3,15 +3,17 @@ import gallery_two from "../assets/images/gallery2.svg";
 import gallery_three from "../assets/images/gallery3.svg";
 import gallery_four from "../assets/images/gallery4.jpeg";
 import gallery_five from "../assets/images/gallery5.jpeg";
+import gallery_eight from "../assets/images/screencapture-vimeo-1021620397-2025-03-08-21_28_49.png"
+import gallery_seven from "../assets/images/screencapture-vimeo-1030637546-2025-03-08-21_24_18.png"
 import gallery_six from "../assets/images/gallery6.jpeg";
 import ReactPlayer from "react-player";
 import { Link } from "react-router-dom";
 
 const videos = [
   
-  { url: "https://vimeo.com/1030637546", light: gallery_six },
-  { url: "https://vimeo.com/1021620397", light: gallery_six },
-  { url: " https://vimeo.com/1010058915/c7c983dfc5", light: gallery_six },
+  { url: "https://vimeo.com/1030637546", light: gallery_seven },
+  { url: "https://vimeo.com/1021620397", light:gallery_eight },
+  // { url: " https://vimeo.com/1010058915/c7c983dfc5", light: gallery_six },
   { url: "https://vimeo.com/990177049/e349d31ec3", light: gallery_six },
 
   { url: "https://www.dropbox.com/scl/fi/te2r7y8c4j3vq457hvd71/teaser-2160p-1.mp4?rlkey=93s9yy5a7xghggjzfgyx113ub&st=zg4tmxi6&dl=0", light: gallery_one },
