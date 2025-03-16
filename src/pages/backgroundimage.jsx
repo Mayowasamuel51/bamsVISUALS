@@ -8,7 +8,15 @@ const images = [img0, img01, img1];
 const Background = () => {
   return (
     <div className="relative w-full py-10">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-full px-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-full px-4 "     data-aos="fade-up"
+    data-aos-offset="200"
+    data-aos-delay="30"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-center"
+>
         {images.map((image, index) => (
           <motion.div 
             key={index} 
