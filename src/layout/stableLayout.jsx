@@ -93,8 +93,24 @@ const StableLayout = () => {
             </Splide>
           </div>
         </div>
+
+        
         <Background />
 
+
+        <div className="text-center md:py-20 py-10">
+          <h1 className="cursive md:text-6xl text-3xl md:my-6 my-3">
+            Can’t wait to chat with you!!
+          </h1>
+          <Link  to="/contact">
+            <button className="bg-button border-2 border-button hover:bg-transparent hover:text-text duration-200 mx-auto p-4 w-fit font-bold text-white">
+              LET'S TALK
+            </button>
+          </Link>
+        </div>
+
+
+        
         <Outlet />
         <Footer />
       </div>

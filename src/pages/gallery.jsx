@@ -37,11 +37,11 @@ const videos = [
 
 const Gallery = () => {
   return (
-    <div className="bg-black">
+    <div className="bg-black text-white">
       <Navbar />
 
-      <main className="py-20">
-        <div className="text-center mb-10">
+      <main className="py-20 ">
+        <div className="text-center mb-10 mt-12">
           <h1 className="cursive text-4xl md:text-6xl my-2">Recent Works</h1>
           <p className="md:text-xl text-base font-light italic">
             Explore our latest stories in motion!
