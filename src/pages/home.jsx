@@ -19,7 +19,7 @@ const Home = () => {
                 <title>Home</title>
             </Helmet>
             <div>
-                <Gallery/>
+                <Gallery/>.
             </div>
             {/* Hero Section */}
             {/* <div className="hero text-center flex flex-col py-20 md:px-20 px-4 lg:w-[70%] w-full lg:mx-auto">

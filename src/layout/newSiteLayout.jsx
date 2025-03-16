@@ -9,6 +9,7 @@ import { Link, Outlet, useLocation } from "react-router-dom";
 import "../styles/home.css";
 import Gallery from "../pages/gallery";
 import Home from "../pages/home";
+import Background from "../pages/backgroundimage";
 const containerVariant = {
   initial: { opacity: 0, y: -30 },
   animate: {
@@ -83,7 +84,7 @@ const NewSiteLayout = () => {
             </div>
           )}
 
-          {pathname === "/gallery" && (
+          {/* {pathname === "/gallery" && (
             <div className="flex flex-col gap-5 min-h-screen justify-center">
               <motion.h1 className="md:text-4xl text-3xl font-medium">
                 Gallery
@@ -92,7 +93,7 @@ const NewSiteLayout = () => {
                 Your event through my lens
               </motion.p>
             </div>
-          )}
+          )} */}
           {pathname === "/contact" && (
             <div className="flex flex-col gap-5 min-h-screen justify-center">
               <motion.h1 className="md:text-4xl text-3xl font-medium">
@@ -180,7 +181,7 @@ const NewSiteLayout = () => {
 
       <div>
         <div>
-          {/* <Gallery /> */}
+          {/* <Background/> */}
         </div>
      
       </div>

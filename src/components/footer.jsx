@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom"
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa6";
+import { FaEnvelope, FaTwitter } from "react-icons/fa6";
 
 const Footer = () => {
     return (
@@ -24,11 +24,10 @@ const Footer = () => {
     </a>
     </div>
     <div className="w-8 md:w-12 h-8 md:h-12 flex items-center justify-center rounded-full bg-blue-600 text-white">
-        <FaTwitter size={20} />
+        {/* <FaTwitter size={20} /> */}
+         <FaEnvelope size={24} className="hover:opacity-70 duration-300 text-white text-2xl" />
     </div>
-    <div className="w-8 md:w-12 h-8 md:h-12 flex items-center justify-center rounded-full bg-blue-600 text-white">
-        <FaFacebook size={20} />
-    </div>
+   
 </div>
 
             </div>
