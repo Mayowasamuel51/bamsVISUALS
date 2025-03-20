@@ -1,4 +1,4 @@
-import gallery_one from "../assets/images/gallery1.svg";
+import gallery_one from "../assets/images/screencapture-player-vimeo-video-1018523334-2025-03-20-11_34_49.png";
 import gallery_two from "../assets/images/gallery2.svg";
 import gallery_three from "../assets/images/gallery3.svg";
 import gallery_four from "../assets/images/gallery4.jpeg";
@@ -16,15 +16,16 @@ import logo from "../assets/images/logo2.png";
 import logo2 from "../assets/images/logo-gold.png";
 import BgFilmPage from "../components/bgFilmPage";
 const videos = [
+  {
+    url: "https://player.vimeo.com/video/1018523334?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    light: gallery_one,
+  },
   { url: "https://vimeo.com/1030637546", light: gallery_seven },
   { url: "https://vimeo.com/1021620397", light: gallery_eight },
   // { url: " https://vimeo.com/1010058915/c7c983dfc5", light: gallery_six },
   { url: "https://vimeo.com/990177049/e349d31ec3", light: gallery_six },
 
-  // {
-  //   url: "https://www.dropbox.com/scl/fi/te2r7y8c4j3vq457hvd71/teaser-2160p-1.mp4?rlkey=93s9yy5a7xghggjzfgyx113ub&st=zg4tmxi6&dl=0",
-  //   light: gallery_one,
-  // },
+
   // {
   //   url: "https://www.dropbox.com/scl/fi/al3ytsl8ag93mn0ntfz33/IMG_0520.PNG?rlkey=lmow2oxxyv7sp7wwad41ky4h6&st=tghnhjyw&dl=0",
   //   light: gallery_two,
