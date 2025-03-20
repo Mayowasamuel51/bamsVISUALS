@@ -1,9 +1,15 @@
 import { motion } from "framer-motion";
 import img0 from "../assets/images/screencapture-player-vimeo-video-1021627312-2025-03-20-11_54_39.png";
-import img01 from "../assets/images/Snapinsta.webp";
+import img01 from   "../assets/images/screencapture-player-vimeo-video-1018523334-2025-03-20-11_34_49.png";
 import img1 from "../assets/images/screencapture-vimeo-1030637546-2025-03-08-21_24_18.png";
 
-const images = [img0, img01, img1];
+import img2  from  "../assets/images/gallery4.jpeg";
+
+import img3 from   "../assets/images/gallery6.jpeg";
+
+
+import img4 from    "../assets/images/Snapinsta.webp";
+const images = [img0, img01, img1 , img2, img3,  img4 ];
 
 const Background = () => {
   return (
