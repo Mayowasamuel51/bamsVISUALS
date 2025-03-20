@@ -22,7 +22,7 @@ const Navbar = () => {
   const handleNav = () => setToggleNav((prev) => !prev);
 
   return (
-    <header className={`z-20 fixed top-0 left-0 right-0 md:top-12 md:right-12 md:left-12 md:rounded-xl overflow-hidden shadow-lg flex justify-between items-center md:px-20 px-4 py-2 duration-300 ${bg ? "bg-white" : "bg-transparent"}`}>
+    <header className={`z-20 fixed top-0 left-0 right-0 md:top-12 md:right-12 md:left-12 md:rounded-xl overflow-hidden shadow-lg flex justify-between items-center md:px-20 px-4 py-2 duration-300 backdrop-blur-md bg-transparent ${bg ? "bg-white" : "bg-transparent"}`}>
       {/* Background transition */}
       <div className={`${bg ? "bg-white h-full" : "h-0"} duration-300 h-0 absolute inset-0 -z-10 md:rounded-xl`}></div>
 

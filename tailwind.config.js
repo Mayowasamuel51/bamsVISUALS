@@ -11,7 +11,7 @@ export default {
         button: "#B68302"
       },
       fontFamily: {
-        poppins: ['Poppins', 'sans-serif'], // Add Poppins font
+        poppins: ['Poppins'], // Add Poppins font
       },
     },
   },
