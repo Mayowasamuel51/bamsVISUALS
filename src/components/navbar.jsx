@@ -44,7 +44,7 @@ const Navbar = () => {
         <nav>
           <ul className={`flex items-center gap-8 ${bg ? "text-black" : "text-white"}`}>
             <li className="hover:opacity-70 duration-300"><NavLink to="/">Home</NavLink></li>
-            <li className="hover:opacity-70 duration-300"><NavLink to="/gallery">Gallery</NavLink></li>
+            <li className="hover:opacity-70 duration-300"><NavLink to="/gallery">Film Page</NavLink></li>
             <li className="hover:opacity-70 duration-300"><NavLink to="/contact">Contact</NavLink></li>
             <li className="hover:opacity-70 duration-300"><NavLink to="/about">About</NavLink></li>
           </ul>

@@ -13,6 +13,7 @@ import Footer from "../components/footer";
 // import Mobilenav from "./mobilenav";
 import logo from "../assets/images/logo2.png";
 import logo2 from "../assets/images/logo-gold.png";
+import BgFilmPage from "../components/bgFilmPage";
 const videos = [
   { url: "https://vimeo.com/1030637546", light: gallery_seven },
   { url: "https://vimeo.com/1021620397", light: gallery_eight },
@@ -39,6 +40,7 @@ const Gallery = () => {
   return (
     <div className="bg-black text-white">
       <Navbar />
+      <BgFilmPage/>
 
       <main className="py-20 ">
         <div className="text-center mb-10 mt-12">

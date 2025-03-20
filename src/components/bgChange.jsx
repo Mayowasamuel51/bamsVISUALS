@@ -4,7 +4,7 @@ const BgChange = () => {
   return (
     <div className="relative w-full h-screen">
       <iframe
-        src="https://player.vimeo.com/video/1010058915?autoplay=1&loop=1&muted=1&background=1"
+        src="https://player.vimeo.com/video/1010058915?h=c7c983dfc5&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
         className="absolute top-0 left-0 w-full h-full"
         frameBorder="0"
         allow="autoplay; fullscreen; picture-in-picture"

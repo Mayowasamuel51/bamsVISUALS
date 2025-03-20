@@ -20,7 +20,7 @@ const Mobilenav = ({ handleNav }) => {
             <NavLink to="/">Home</NavLink>
           </li>
           <li onClick={handleNav} className="hover:text-gray-500 duration-300">
-            <NavLink to="/gallery">Gallery</NavLink>
+            <NavLink to="/gallery">Film Page</NavLink>
           </li>
           <li onClick={handleNav} className="hover:text-gray-500 duration-300">
             <NavLink to="/contact">Contact</NavLink>
