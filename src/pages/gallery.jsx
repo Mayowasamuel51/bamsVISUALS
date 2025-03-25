@@ -1,7 +1,7 @@
 import gallery_one from "../assets/images/screencapture-player-vimeo-video-1018523334-2025-03-20-11_34_49.png";
 import gallery_two from "../assets/images/gallery2.svg";
 import gallery_three from "../assets/images/screencapture-player-vimeo-video-1021627312-2025-03-20-11_54_39.png";
-import gallery_four from "../assets/images/gallery4.jpeg";
+import gallery_four from "../assets/images/newnew.png";
 import gallery_five from "../assets/images/gallery5.jpeg";
 import gallery_eight from "../assets/images/screencapture-vimeo-1021620397-2025-03-08-21_28_49.png";
 import gallery_seven from "../assets/images/screencapture-vimeo-1030637546-2025-03-08-21_24_18.png";
@@ -17,6 +17,10 @@ import logo2 from "../assets/images/logo-gold.png";
 import BgFilmPage from "../components/bgFilmPage";
 const videos = [
 
+  {
+    url: "https://player.vimeo.com/video/1010058915?h=c7c983dfc5&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    light: gallery_four,
+  },
   {
       url: "https://player.vimeo.com/video/1021627312?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
       light: gallery_three,
