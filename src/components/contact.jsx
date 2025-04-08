@@ -7,7 +7,7 @@ const Contact = () => {
     const {pathname} = useLocation()
   return (
     <section className="bg-[#949191] lg:p-32 md:p-10 p-4">
-        <div className={`flex gap-20 ${pathname === "/contact" && "flex-row-reverse"}`}>
+        <div className={`flex lg:flex-nowrap flex-wrap gap-20 ${pathname === "/contact" && "flex-row-reverse"}`}>
             <div className="flex-1 flex flex-col gap-10">
                 <div className="flex gap-10 lg:flex-nowrap flex-wrap">
                     <input className="text-white placeholder:text-white  font-open_sans flex-1 bg-transparent w-full h-12 border-l border-b border-white pl-4" placeholder="Your name here" type="text" />

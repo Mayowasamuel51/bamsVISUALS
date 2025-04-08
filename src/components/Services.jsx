@@ -28,7 +28,7 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="w-full bg-dark2 py-32 px-6 md:px-20">
+    <section className="w-full bg-dark2 py-32 px-4 md:px-20 overflow-hidden">
       <div className="text-center space-y-16 py-20 px-10 bg-[url('./assets/images/servicebg.png')] bg-contain bg-fixed">
         <div className="flex flex-col gap-4">
           <motion.h2

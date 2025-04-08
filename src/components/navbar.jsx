@@ -23,7 +23,7 @@ const Navbar = () => {
 
   return (
     <header
-      className={`z-[999999999999999999999] fixed top-0 left-0 right-0 flex justify-between items-center px-6 md:px-56 py-4 transition-all duration-500 ${
+      className={`z-[999999999999999999999] w-full top-0 left-0 right-0 flex justify-between items-center px-6 md:px-56 transition-all duration-500 ${
         bg ? "bg-white shadow-md" : "bg-dark"
       }`}
     >
@@ -61,32 +61,6 @@ const Navbar = () => {
           </li>
         </ul>
       </nav>
-
-      {/* Social Media Links */}
-      {/* <div className="flex gap-4 items-center">
-        <a href="https://www.instagram.com/bamsvisuals/" target="_blank" rel="noopener noreferrer">
-          <FaInstagram
-            className={`hover:opacity-70 duration-300 text-2xl ${
-              bg ? "text-black" : "text-white"
-            }`}
-          />
-        </a>
-        <a href="mailto:hello@bamvisuals.com">
-          <FaEnvelope
-            className={`hover:opacity-70 duration-300 text-2xl ${
-              bg ? "text-black" : "text-white"
-            }`}
-          />
-        </a>
-        <a href="https://www.linkedin.com/in/example" target="_blank" rel="noopener noreferrer">
-          <FaLinkedin
-            className={`hover:opacity-70 duration-300 text-2xl ${
-              bg ? "text-black" : "text-white"
-            }`}
-          />
-        </a>
-      </div> */}
-
       {/* Mobile Navigation Button */}
       <motion.div
         whileHover={{ scale: 1.1 }}

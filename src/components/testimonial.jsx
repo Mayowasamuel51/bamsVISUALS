@@ -21,7 +21,7 @@ const testimonial = [
 
 const Testimonial = () => {
   return (
-    <section className="lg:p-32 p-10 bg-dark space-y-10">
+    <section className="lg:p-32 p-10 bg-dark space-y-10 overflow-hidden">
       <div className="flex flex-col items-center gap-4">
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
@@ -45,7 +45,7 @@ const Testimonial = () => {
       </div>
       <div className="">
         <div className="relative ">
-          <div className="flex gap-4">
+          <div className="flex lg:flex-nowrap flex-wrap gap-4">
             {testimonial?.map((text, index) => (
               <div
                 key={index}

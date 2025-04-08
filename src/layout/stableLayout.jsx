@@ -7,12 +7,10 @@ import { Outlet } from "react-router-dom"
 const StableLayout = () => {
   return (
     <>
-      <div>
-        <Navbar />
-        <BgChange />
-        <Outlet />
-        <Footer />
-      </div>
+      <Navbar />
+      <BgChange />
+      <Outlet />
+      <Footer />
     </>
   );
 };

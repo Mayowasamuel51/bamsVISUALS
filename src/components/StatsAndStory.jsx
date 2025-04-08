@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const StatsAndStory = () => {
   return (
-    <section className="w-full bg-dark py-24 px-6 md:px-20">
+    <section className="w-full bg-dark py-24 px-6 md:px-20 overflow-hidden">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 items-start">
         <div className="flex flex-col gap-12 w-full lg:w-1/2">
           <motion.div
@@ -46,7 +46,7 @@ const StatsAndStory = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
           viewport={{ once: true }}
-          className="w-full lg:w-1/2 flex flex-col items-center justify-center gap-8"
+          className="w-full flex flex-col items-center justify-center gap-8"
         >
           <div className="w-full h-64 md:h-96">
             <iframe

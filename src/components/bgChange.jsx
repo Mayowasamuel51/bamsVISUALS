@@ -35,7 +35,7 @@ const BgChange = () => {
             style={{ pointerEvents: "none" }}
           />
         </div>
-        <div className="absolute inset-0 bg-black/90"></div>
+        <div className="absolute inset-0 bg-black/60"></div>
       </div>
 
       {pathname === "/" && (
@@ -64,7 +64,7 @@ const BgChange = () => {
 
           {/* Description */}
           <motion.p
-            className="xl:w-[1000px] text-sm md:text-sm lg:text-base font-normal leading-relaxed mx-auto text-open_sans"
+            className="text-sm md:text-sm lg:text-base font-normal leading-relaxed text-open_sans"
             variants={fadeUpVariant}
           >
             A wedding film is more than just a recording —
