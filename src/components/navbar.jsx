@@ -23,8 +23,8 @@ const Navbar = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-20 flex justify-between items-center px-6 md:px-20 py-4 transition-all duration-500 ${
-        bg ? "bg-white shadow-md" : "bg-transparent"
+      className={`z-[999999999999999999999] fixed top-0 left-0 right-0 flex justify-between items-center px-6 md:px-56 py-4 transition-all duration-500 ${
+        bg ? "bg-white shadow-md" : "bg-dark"
       }`}
     >
       {/* Logo */}
@@ -32,7 +32,7 @@ const Navbar = () => {
         <motion.img
           src={bg ? logo2 : logo}
           alt="logo"
-          className="w-20 object-cover"
+          className="size-20 object-contain"
           initial={{ rotateY: 0 }}
           animate={{ rotateY: bg ? 360 : 0 }}
           transition={{ duration: 0.5 }}
@@ -43,27 +43,27 @@ const Navbar = () => {
       {/* Navigation Links */}
       <nav className="hidden md:block">
         <ul
-          className={`flex items-center gap-8 text-lg font-medium transition-colors duration-300 ${
+          className={`*:font-quicksand flex items-center gap-8 text-base font-bold transition-colors duration-300 ${
             bg ? "text-black" : "text-white"
           }`}
         >
           <li className="hover:opacity-70 duration-300">
-            <NavLink to="/">Home</NavLink>
+            <NavLink className={({isActive})=> isActive ? "text-text_gold font-quicksand" : bg ? "text-black font-quicksand" : " text-white font-quicksand"} to="/">Home</NavLink>
           </li>
           <li className="hover:opacity-70 duration-300">
-            <NavLink to="/gallery">Films</NavLink>
+            <NavLink className={({isActive})=> isActive ? "text-text_gold font-quicksand" : bg ? "text-black font-quicksand" : " text-white font-quicksand"} to="/about">About</NavLink>
           </li>
           <li className="hover:opacity-70 duration-300">
-            <NavLink to="/about">About</NavLink>
+            <NavLink className={({isActive})=> isActive ? "text-text_gold font-quicksand" : bg ? "text-black font-quicksand" : " text-white font-quicksand"} to="/gallery">Films</NavLink>
           </li>
           <li className="hover:opacity-70 duration-300">
-            <NavLink to="/contact">Contact</NavLink>
+            <NavLink className={({isActive})=> isActive ? "text-text_gold font-quicksand" : bg ? "text-black font-quicksand" : " text-white font-quicksand"} to="/contact">Contact</NavLink>
           </li>
         </ul>
       </nav>
 
       {/* Social Media Links */}
-      <div className="flex gap-4 items-center">
+      {/* <div className="flex gap-4 items-center">
         <a href="https://www.instagram.com/bamsvisuals/" target="_blank" rel="noopener noreferrer">
           <FaInstagram
             className={`hover:opacity-70 duration-300 text-2xl ${
@@ -85,7 +85,7 @@ const Navbar = () => {
             }`}
           />
         </a>
-      </div>
+      </div> */}
 
       {/* Mobile Navigation Button */}
       <motion.div

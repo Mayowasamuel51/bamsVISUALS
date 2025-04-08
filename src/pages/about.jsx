@@ -4,8 +4,15 @@ import { motion, useInView } from "framer-motion";
 import Navbar from "../components/navbar";
 import BgChange from "../components/bgChange";
 import Footer from "../components/footer";
-import logo from "../assets/images/logo2.png";
-import logo2 from "../assets/images/logo-gold.png";
+import award1 from "../assets/images/award1.png"
+import award2 from "../assets/images/award2.png"
+import award3 from "../assets/images/award3.png"
+import thumbNail from "../assets/images/screencapture-vimeo-1030637546-2025-03-08-21_24_18.png"
+import ReactPlayer from 'react-player'
+import StatsAndStory from "../components/StatsAndStory";
+import Studio from "../components/studio";
+
+
 const containerVariant = {
   initial: { opacity: 0 },
   animate: {
@@ -37,82 +44,72 @@ const About = () => {
 
   return (
     <main className="bg-black text-white">
-      <div className="relative w-full h-screen bg-black">
-        <BgChange />
-      </div>
-      <Navbar />
-      {/* About Section */}
-      <br />
-      <section className="md:py-20 py-10 md:px-10 px-4   ">
-        <motion.div
-          ref={mainRef}
-          variants={containerVariant}
-          initial="initial"
-          animate={isMainInView ? "animate" : "initial"}
-          className="flex flex-col md:flex-row items-center md:items-start gap-10 md:gap-16 max-w-6xl mx-auto"
-        >
-          {/* Image Section */}
-          <motion.img
-            variants={divChildVariant}
-            src={aboutImage}
-            alt="About Me"
-            className="w-full max-w-sm md:max-w-md lg:max-w-lg h-auto object-cover"
-          />
+      <section className="relative bg-dark pt-52 pb-32 px-6 md:px-32 flex flex-col gap-20 z-[999999]">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+            className="text-left"
+          >
+            <p className="font-quicksand text-sm md:text-lg text-text_gold uppercase tracking-widest font-bold">
+              CINESTER STUDIO
+            </p>
+            <h2 className="font-cormorant text-3xl md:text-5xl font-bold text-white mt-2 leading-snug">
+              HAVE IDEA FOR YOUR PROJECT ?
+            </h2>
+          </motion.div>
 
-          {/* Text Section */}
+          {/* Right Side */}
           <motion.div
-            variants={divChildVariant}
-            className="flex-1 text-center md:text-right"
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
           >
-            <p className="text-base md:text-lg font-light leading-relaxed">
-              Adventure seeker, storyteller, and frame-obsessor! Based in the
-              stunning Pacific Northwest, with Tacoma as my backyard and
-              Seattle's creative vibes fueling my passion. Always ready to
-              capture life's breathtaking moments and tales. Whether it's a
-              wedding, a brand story, or a personal adventure, I'm here to help
-              you tell your story and make it unforgettable! Let's make some
-              cinematic memories and become the ultimate storytelling squad!
+            <p className="font-open_sans text-base md:text-base text-[#F0F0F0] font-light leading-relaxed">
+              When you choose Bamsvisuals, you&apos;re choosing a personalized cinematic experience tailored just for you.
             </p>
-            <h3 className="cursive text-button text-3xl md:text-[60px] lg:text-[80px] leading-tight mt-6">
-              With love and prayers, <br /> Bams Visuals
-            </h3>
           </motion.div>
-        </motion.div>
+        </div>
+        <div className="relative grid grid-cols-1 md:grid-cols-5 gap-20 items-center">
+          <div className="lg:col-span-3">
+            <ReactPlayer
+              loop={true}
+              playing
+              muted
+              width="500"
+              light={thumbNail}
+              url={"https://player.vimeo.com/video/1010058915?h=c7c983dfc5&amp%3Bbadge=0&amp%3Bautopause=0&amp%3Bplayer_id=0&amp%3Bapp_id=58479&turnstile=0.jkUrXTWsU2boirbAQbatHJem9fIhqPvDDb8rEi0Y-IKsNU62mRPLomUwTAkfiGvlCzkHCpMsTTCDG_RUoVCDH-gRtiHKOubV0zqY-tS2yUM5s6X7-6y8pB489BpjVwE27ObET7JCltAX5b2BCY6MjW7XzMhuFW_QuKH488KvQk94fMo92N6fdaWPyjy0uozLIIiJvUvTpo9UfNXMjbh_-gEsNEbIZoSWDlU0O2uaVEjKFiT5J8XDIWE_47I9Y1z2LHptJCPpDdY6VFn8h22YWbGGMtVwl8FT2kICaocZZ8RdK8DZ0ihD-3D94XT_K_tL8WjjzBW5jXiSsxVF8uqjM2iM1evHCA2AwcvLWHA4xUwvwrPWO8zzfcE35C8D0Ptv9g8Ve5cwUY1xhL9oiJ1mXBo3THh0R97Z92_Pu05U2Vm8YQRN0_0paeh2mdGhzHgrry7wu_VdXbXorx5aYtDULON__gtps1LQDbeInFq-Paq_o7fzEvJA6HzVg-6o1ufpTzh0ENPgcgRpJqcM6iiDVlZYx-EQIercB6GVCYkHgp8FSqI5gLkEqdVs7CI-t-xE6VNS7dwvaFa3kLTnWcnp6bJpQaY2oeYjEqQ5OpiqCg3dtTg6oJuHNTQUrOGY71t99MDV1VLoSv0bppiC2bx1bgrcNiz5vDJbpjiemnrT9_JeBAuT6PlRL-qB8kPrKzE-3AlqsbxJJIuEZffL0W3PYwHKRZ0KoyFn0mgDCCoi721g0FTloIVEJTdL5tQAOUGGom4u3cbG9x5fQKn2pKSPsje2dblXg9uZX7EJyU58PndaUD21Z-O5KNkmfkX1v5cAZqB3-SXZ2yGh7cYEcgYLkNJlrdsypXLL9Zhfuxl4ubY.RK23gTeQPbRuaQpL6Bw9Rg.eeef0194d603fbe9324fbbe009331d5938b2553ac12b4375b8d5690d30f00412&ref="} />
+          </div>
+          <div className="lg:col-span-2 flex flex-col gap-4">
+            <h1 className="font-cormorant text-white text-2xl font-bold">DO NOT HESITATE TO CHOOSE BAM VISUALS  AS YOUR STUDIO PRODUCTION</h1>
+            <p className="font-normal text-[#F0F0F0] font-open_sans text-base">We take the time to get to know each couple so the film captures the event in a way that reflects who they are. For us, wedding films are more than just a video. They&apos;re a keepsake that tells your love story in a way only film can. And since every couple is unique, we approach each wedding with fresh eyes and an open heart, ready to create something special.</p>
+            <div className="flex justify-around items-center">
+              <div className="text-center">
+                <h2 className="font-quicksand font-bold text-[60px] text-text_gold">250+</h2>
+                <p className="font-quicksand font-bold text-base text-white">WEDDING FILMS</p>
+              </div>
+              <div className="text-center">
+                <h2 className="font-quicksand font-bold text-[60px] text-text_gold">78+</h2>
+                <p className="font-quicksand font-bold text-base text-white">BIRTHDAY VIDEOS</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
-      {/* My Style Section */}
-      <section className="md:py-20 py-10 md:px-10 px-4">
-        <motion.div
-          ref={subRef}
-          variants={containerVariant}
-          initial="initial"
-          animate={isSubInView ? "animate" : "initial"}
-          className="flex md:flex-row flex-col gap-10 md:gap-20"
-        >
-          <motion.div
-            variants={divChildVariant}
-            className="flex-1 flex flex-col gap-4"
-          >
-            <h1 className="font-bold text-3xl md:text-4xl roboto">My Style</h1>
-            <p className="text-base md:text-lg font-light">
-              My style is a fusion of cinematic flair, documentary grit, and a
-              deep love for the human experience. My films are woven with heart,
-              soul, and a dash of magic. I chase light, laughter, and tears to
-              craft stories that whisper secrets to your soul. With a keen eye
-              for the authentic and the unscripted, I weave tales that transport
-              you back to the moment it all happened. My films are a symphony of
-              emotions, a dance between light and shadow, and a celebration of
-              the beauty in the everyday. I don’t just capture moments—I bottle
-              up the feelings, the joy, and the tears so you can relive them
-              forever. Let’s create films that make your heart skip a beat and
-              your soul feel alive.
-            </p>
-            <button className="bg-button border-2 border-button hover:bg-transparent hover:text-text duration-200 p-4 w-fit font-bold text-white">
-              LET'S TALK
-            </button>
-          </motion.div>
-        </motion.div>
-      </section>
-      <Footer/>
+      <div className="lg:grid hidden -top-[80px] right-0 left-0 grid-cols-4 px-20 bg-dark2">
+        <div className="p-6 bg-text_gold">
+          <h2 className="font-cormorant font-bold text-xl">WE ARE THE BEST STUDIO PRODUCTION</h2>
+          <p className="font-open_sans font-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <img src={award1} className="" alt="" />
+        <img src={award2} className="" alt="" />
+        <img src={award3} className="" alt="" />
+      </div>
+      <StatsAndStory />
+      <Studio />
     </main>
   );
 };

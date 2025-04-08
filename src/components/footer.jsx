@@ -1,38 +1,27 @@
-import { NavLink } from "react-router-dom"
-import { FaInstagram } from "react-icons/fa";
-import { FaFacebook } from "react-icons/fa";
-import { FaEnvelope, FaTwitter } from "react-icons/fa6";
+
 
 const Footer = () => {
     return (
-        <div className='md:px-10 px-4'>
-            <div className='flex items-center justify-between py-2 md:py-4 border-t border-b border-black mb-2 md:mb-6 mt-4 md:mt-10'>
-                <nav>
-                    <ul className={`flex items-center md:text-sm text-xs gap-2 md:gap-5`}> 
-                        <li className="hover:opacity-70 duration-300"><NavLink className={({ isActive }) => isActive && "text-text"} to="/">Home</NavLink></li>
-                        <li className="hover:opacity-70 duration-300"><NavLink className={({ isActive }) => isActive && "text-text"} to="/gallery">Gallery</NavLink></li>
-                        <li className="hover:opacity-70 duration-300"><NavLink className={({ isActive }) => isActive && "text-text"} to="contact">Contact</NavLink></li>
-                        <li className="hover:opacity-70 duration-300"><NavLink className={({ isActive }) => isActive && "text-text"} to="/about">About</NavLink></li>
-                    </ul>
-                </nav>
+        <>
+            <div className="text-center md:py-20 py-10 bg-dark space-y-10">
+                <div>
+                    <h1 className="font-cormorant md:text-6xl text-3xl md:my-6 my-3 xl:w-[1000px] w-full mx-auto text-white">HAVE IDEA IN YOUR MIND ? LET&apos;S START YOUR PROJECT WITH US
+                    </h1>
+                    <p className="font-quicksand font-bold text-text_gold text-xl">BAM VISUALS, +234 811 823 6308 OR HELLO@BAMVISUALS.COM</p>
+                </div>
 
-                <div className="footer-icons flex items-center gap-3 md:gap-6">
-    <div className="w-8 md:w-12 h-8 md:h-12 flex items-center justify-center rounded-full bg-blue-600 text-white">
-    <a href="https://www.instagram.com/bamsvisuals/" target="_blank" rel="noopener noreferrer" 
-       className="w-8 md:w-12 h-8 md:h-12 flex items-center justify-center rounded-full bg-blue-600 text-white">
-        <FaInstagram size={20} />
-    </a>
-    </div>
-    <div className="w-8 md:w-12 h-8 md:h-12 flex items-center justify-center rounded-full bg-blue-600 text-white">
-        {/* <FaTwitter size={20} /> */}
-         <FaEnvelope size={24} className="hover:opacity-70 duration-300 text-white text-2xl" />
-    </div>
-   
-</div>
-
+                <div className="flex text-white justify-center gap-5 items-center">
+                    <p className="font-cormorant text-2xl font-bold">FACEBOOK</p>
+                    <p className="font-cormorant text-2xl font-bold">TWITTER</p>
+                    <p className="font-cormorant text-2xl font-bold">LINKEDIN</p>
+                    <p className="font-cormorant text-2xl font-bold">INSTAGRAM</p>
+                    <p className="font-cormorant text-2xl font-bold">YOUTUBE</p>
+                </div>
             </div>
-            <p className="text-center py-2 md:py-4 md:text-base text-xs">&copy; {new Date().getFullYear()}, Bam Visuals. All rights reserved</p>
-        </div>
+            <div className="py-10 bg-[url('./assets/images/servicebg.png')] bg-cover bg-no-repeat relative after:absolute after:inset-0 after:bg-black/80">
+            </div>
+        </>
+
     )
 }
 
