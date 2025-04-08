@@ -10,12 +10,12 @@ body {
     background-color: #121212;
     color: white;
     min-height: 100vh;
-    padding: 20px;
+    
   }
   
   .hero h1 {
     font-family: 'Poppins', sans-serif;
-    font-weight: 700;
+    font-weight: 900;
     color: #f6e7be;
   }
   
