@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 const Studio = () => {
     return (
         <section className="lg:p-32 md:p-10 p-4 bg-dark2 py-20">
-            <div className="flex gap-10 lg:flex-nowrap flex-wrap">
+            <div className="flex gap-10 lg:flex-row flex-col">
                 <div className="flex-1 flex flex-col gap-12 w-full lg:w-1/2">
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}

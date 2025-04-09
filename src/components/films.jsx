@@ -1,8 +1,10 @@
+import { Link } from "react-router-dom";
 import film1 from "../assets/images/Snapinsta.webp"
 import film2 from "../assets/images/show.webp"
 import film3 from "../assets/images/test.webp"
 import { motion } from 'framer-motion';
 import { fadeIn } from "../hooks/variants";
+
 
 const Films = () => {
     return (
@@ -30,8 +32,12 @@ const Films = () => {
                 <div className="flex-1 flex flex-col gap-4">
                     <p className="font-open_sans font-normal text-base text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Proin interdum dignissim maximus. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
                     <div className="flex md:flex-row flex-col gap-10">
-                        <button className="font-quicksand border-2 border-text_gold text-text_gold p-4">SEE ALL PROJECT</button>
-                        <button className="font-quicksand  p-4 text-white">START YOUR PROJECT</button>
+                        <Link to="/gallery">
+                            <button className="font-quicksand border-2 border-text_gold hover:bg-text_gold hover:text-black duration-300 text-text_gold p-4">SEE ALL PROJECT</button>
+                        </Link>
+                        <Link to="/contact">
+                            <button className="font-quicksand border-2 border-dark2 hover:border-text_gold duration-300 p-4 text-white">START YOUR PROJECT</button>7
+                        </Link>
                     </div>
                 </div>
             </div>
