@@ -23,7 +23,7 @@ const Navbar = () => {
 
   return (
     <header
-      className={`z-[999999999999999999999] w-full top-0 left-0 right-0 flex justify-between items-center px-6 md:px-56 transition-all duration-500 ${
+      className={`z-[999999999999999999999] w-full fixed top-0 left-0 right-0 flex justify-between items-center px-6 md:px-56 transition-all duration-500 ${
         bg ? "bg-white shadow-md" : "bg-dark"
       }`}
     >
@@ -40,10 +40,9 @@ const Navbar = () => {
         />
       </Link>
 
-      {/* Navigation Links */}
       <nav className="hidden md:block">
         <ul
-          className={`*:font-quicksand flex items-center gap-8 text-base font-bold transition-colors duration-300 ${
+          className={`*:font-quicksand flex items-center gap-8 text-base font-bold transition-colors duration-500 ${
             bg ? "text-black" : "text-white"
           }`}
         >
@@ -75,8 +74,9 @@ const Navbar = () => {
         )}
       </motion.div>
 
-      {/* Mobile Navigation */}
-      <AnimatePresence>{toggleNav && <Mobilenav handleNav={handleNav} />}</AnimatePresence>
+      <AnimatePresence>
+        {toggleNav && <Mobilenav handleNav={handleNav} />}
+      </AnimatePresence>
     </header>
   );
 };

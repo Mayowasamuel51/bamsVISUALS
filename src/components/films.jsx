@@ -2,13 +2,14 @@ import film1 from "../assets/images/Snapinsta.webp"
 import film2 from "../assets/images/show.webp"
 import film3 from "../assets/images/test.webp"
 import { motion } from 'framer-motion';
+import { fadeIn } from "../hooks/variants";
 
 const Films = () => {
     return (
         <section className='bg-dark2 lg:p-32 md:p-10 p-4 overflow-hidden'>
             <div>
-                <motion.p className="text-base text-text_gold font-bold font-quicksand">PORTFOLIO</motion.p>
-                <h1 className='font-bold font-cormorant text-[48px] text-white'>FILMS</h1>
+                <motion.p variants={fadeIn("right", 0.1, 0.3)} initial="hidden" whileInView={"show"} viewport={{ once: true }} className="text-base text-text_gold font-bold font-quicksand">PORTFOLIO</motion.p>
+                <motion.h1 variants={fadeIn("right", 0.2, 0.3)} initial="hidden" whileInView={"show"} viewport={{ once: true }} className='font-bold font-cormorant text-[48px] text-white'>FILMS</motion.h1>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-3 items-center py-20">
                 <div>

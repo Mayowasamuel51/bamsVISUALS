@@ -25,9 +25,9 @@ const BlogPosts = [
 
 const Blog = () => {
     return (
-        <section className="lg:p-32 md:p-10 p-4 bg-dark2">
+        <section className="lg:p-32 md:p-10 p-4 py-20 bg-dark2 overflow-hidden">
             <div className="space-y-10">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center overflow-hidden">
                     <motion.div
                         initial={{ opacity: 0, x: -30 }}
                         whileInView={{ opacity: 1, x: 0 }}

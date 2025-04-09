@@ -1,5 +1,6 @@
 import { FaStar } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { fadeIn } from "../hooks/variants";
 
 const testimonial = [
   {
@@ -47,7 +48,7 @@ const Testimonial = () => {
         <div className="relative ">
           <div className="flex lg:flex-nowrap flex-wrap gap-4">
             {testimonial?.map((text, index) => (
-              <div
+              <motion.div variants={fadeIn("up", 0.2 * index, 0.3)} initial="hidden" whileInView={"show"} viewport={{ once: true }}
                 key={index}
                 className="bg-dark2 p-6 flex flex-col gap-4 justify-between"
               >
@@ -59,7 +60,7 @@ const Testimonial = () => {
                   {text.author}
                 </h3>
                 <p className="text-white">{text.role}</p>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>

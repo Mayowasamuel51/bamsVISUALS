@@ -2,7 +2,7 @@ import { motion } from "framer-motion"
 
 const Studio = () => {
     return (
-        <section className="lg:p-32 p-10 bg-dark2">
+        <section className="lg:p-32 md:p-10 p-4 bg-dark2 py-20">
             <div className="flex gap-10 lg:flex-nowrap flex-wrap">
                 <div className="flex-1 flex flex-col gap-12 w-full lg:w-1/2">
                     <motion.div
@@ -26,16 +26,16 @@ const Studio = () => {
                         viewport={{ once: true }}
                         className="space-y-6"
                     >
-                        <table className="border border-white">
+                        <table className="border border-white w-full">
                             <thead>
                                 <tr>
-                                    <th className="p-10 border text-white font-bold text-2xl font-cormorant text-left">DESCRIPTION</th>
-                                    <th className="p-10 border text-white font-bold text-2xl font-cormorant">AREA</th>
+                                    <th className="lg:p-10 p-2 border text-white font-bold text-2xl font-cormorant text-left">DESCRIPTION</th>
+                                    <th className="lg:p-10 p-2 border text-white font-bold text-2xl font-cormorant">AREA</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td className="p-10 border font-open_sans">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</td>
+                                    <td className="lg:p-10 p-2 border font-open_sans">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</td>
                                     <td className="p-5 border font-open_sans">21,550 sq ft</td>
                                 </tr>
                             </tbody>

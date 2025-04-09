@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
+import { fadeIn } from "../hooks/variants";
 
 const StatsAndStory = () => {
   return (
-    <section className="w-full bg-dark py-24 px-6 md:px-20 overflow-hidden">
-      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 items-start">
-        <div className="flex flex-col gap-12 w-full lg:w-1/2">
+    <section className="w-full bg-dark py-32 px-6 md:px-32 overflow-hidden">
+      <div className="flex flex-col lg:flex-row gap-16 items-start">
+        <div className="flex-1 flex flex-col gap-12 w-full lg:w-1/2">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -13,7 +14,7 @@ const StatsAndStory = () => {
             className="flex flex-col gap-10"
           >
             <div>
-              <h2 className="text-lg font-bold font-quicksand tracking-widest text-text_gold uppercase">STORY</h2>
+              <motion.h2 variants={fadeIn("up", 0.1, 0.3)} initial="hidden" whileInView={"show"} viewport={{ once: true }} className="text-lg font-bold font-quicksand tracking-widest text-text_gold uppercase">STORY</motion.h2>
               <h3 className="lg:w-[400px] leading-[1.2] text-4xl md:text-[48px] font-bold text-white font-cormorant">STORY BEHIND BAM VISUALS</h3>
             </div>
           </motion.div>
@@ -46,7 +47,7 @@ const StatsAndStory = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
           viewport={{ once: true }}
-          className="w-full flex flex-col items-center justify-center gap-8"
+          className="flex-1 w-full flex flex-col items-center justify-center gap-8"
         >
           <div className="w-full h-64 md:h-96">
             <iframe

@@ -17,16 +17,16 @@ const Mobilenav = ({ handleNav }) => {
       >
         <ul className="flex flex-col items-center gap-8 text-black font-semibold text-lg">
           <li onClick={handleNav} className="hover:text-gray-500 duration-300">
-            <NavLink to="/">Home</NavLink>
+            <NavLink className={({isActive})=> isActive ? "text-text_gold font-quicksand" : "text-black font-quicksand"} to="/">Home</NavLink>
           </li>
           <li onClick={handleNav} className="hover:text-gray-500 duration-300">
-            <NavLink to="/gallery">Film Page</NavLink>
+            <NavLink className={({isActive})=> isActive ? "text-text_gold font-quicksand" : "text-black font-quicksand"} to="/about">About</NavLink>
           </li>
           <li onClick={handleNav} className="hover:text-gray-500 duration-300">
-            <NavLink to="/contact">Contact</NavLink>
+            <NavLink className={({isActive})=> isActive ? "text-text_gold font-quicksand" : "text-black font-quicksand"} to="/gallery">Film Page</NavLink>
           </li>
           <li onClick={handleNav} className="hover:text-gray-500 duration-300">
-            <NavLink to="/about">About</NavLink>
+            <NavLink className={({isActive})=> isActive ? "text-text_gold font-quicksand" : "text-black font-quicksand"} to="/contact">Contact</NavLink>
           </li>
         </ul>
       </motion.nav>

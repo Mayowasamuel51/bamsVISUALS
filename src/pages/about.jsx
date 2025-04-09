@@ -1,9 +1,5 @@
-import { useRef } from "react";
-import aboutImage from "../assets/images/WhatsApp Image 2024-08-08 at 14.26.48_5fb3f285.jpg";
-import { motion, useInView } from "framer-motion";
-import Navbar from "../components/navbar";
-import BgChange from "../components/bgChange";
-import Footer from "../components/footer";
+import { motion } from "framer-motion";
+import { fadeIn } from "../hooks/variants";
 import award1 from "../assets/images/award1.png"
 import award2 from "../assets/images/award2.png"
 import award3 from "../assets/images/award3.png"
@@ -12,35 +8,7 @@ import ReactPlayer from 'react-player'
 import StatsAndStory from "../components/StatsAndStory";
 import Studio from "../components/studio";
 
-
-const containerVariant = {
-  initial: { opacity: 0 },
-  animate: {
-    opacity: 1,
-    transition: {
-      duration: 0.4,
-      delayChildren: 0.3,
-      staggerChildren: 0.4,
-      type: "spring",
-    },
-  },
-};
-
-const divChildVariant = {
-  initial: { scale: 0, origin: "top" },
-  animate: {
-    scale: 1,
-    origin: "top",
-    transition: { duration: 0.4, type: "spring" },
-  },
-};
-
 const About = () => {
-  const mainRef = useRef(null);
-  const subRef = useRef(null);
-
-  const isMainInView = useInView(mainRef, { once: true });
-  const isSubInView = useInView(subRef, { once: true });
 
   return (
     <main className="bg-black text-white">
@@ -100,13 +68,13 @@ const About = () => {
         </div>
       </section>
       <div className="lg:grid hidden -top-[80px] right-0 left-0 grid-cols-4 px-20 bg-dark2">
-        <div className="p-6 bg-text_gold">
+        <motion.div variants={fadeIn("up", 0.2, 0.3)} initial="hidden" whileInView={"show"} viewport={{ once: true }} className="p-6 bg-text_gold">
           <h2 className="font-cormorant font-bold text-xl">WE ARE THE BEST STUDIO PRODUCTION</h2>
           <p className="font-open_sans font-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-        <img src={award1} className="" alt="" />
-        <img src={award2} className="" alt="" />
-        <img src={award3} className="" alt="" />
+        </motion.div>
+        <motion.img variants={fadeIn("up", 0.4, 0.3)} initial="hidden" whileInView={"show"} viewport={{ once: true }} src={award1} className="" alt="" />
+        <motion.img variants={fadeIn("up", 0.6, 0.3)} initial="hidden" whileInView={"show"} viewport={{ once: true }} src={award2} className="" alt="" />
+        <motion.img variants={fadeIn("up", 0.8, 0.3)} initial="hidden" whileInView={"show"} viewport={{ once: true }} src={award3} className="" alt="" />
       </div>
       <StatsAndStory />
       <Studio />
