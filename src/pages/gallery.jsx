@@ -18,7 +18,7 @@ const Gallery = () => {
         </div>
         <motion.div
           id="works"
-          className="gap-10 grid lg:grid-cols-3 grid-cols-2"
+          className="gap-10 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 col-span-1"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}>
@@ -51,7 +51,7 @@ const Gallery = () => {
                 <p className="font-semibold text-lg font-quicksand text-text_gold">SINONPSIS</p>
                 <p>{video.description}</p>
                 <Link to={`/projectDetail/${index + 1}`}>
-                  <button className="border-2 border-text_gold text-text_gold p-4 font-quicksand font-bold">READ MORE</button>
+                  <button className="border-2 border-text_gold text-text_gold hover:bg-text_gold hover:text-black duration-300 p-4 font-quicksand font-bold">READ MORE</button>
                 </Link>
               </div>
             </motion.div>
