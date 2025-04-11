@@ -46,16 +46,16 @@ const Navbar = () => {
           }`}
         >
           <li className="hover:opacity-70 duration-300">
-            <NavLink className={({isActive})=> isActive ? "text-text_gold font-quicksand" : bg ? "text-black font-quicksand" : " text-white font-quicksand"} to="/">Home</NavLink>
+            <NavLink className={({isActive})=> isActive ? "text-text_gold font-quicksand" : "text-white font-quicksand"} to="/">Home</NavLink>
           </li>
           <li className="hover:opacity-70 duration-300">
-            <NavLink className={({isActive})=> isActive ? "text-text_gold font-quicksand" : bg ? "text-black font-quicksand" : " text-white font-quicksand"} to="/about">About</NavLink>
+            <NavLink className={({isActive})=> isActive ? "text-text_gold font-quicksand" : "text-white font-quicksand"} to="/about">About</NavLink>
           </li>
           <li className="hover:opacity-70 duration-300">
-            <NavLink className={({isActive})=> isActive ? "text-text_gold font-quicksand" : bg ? "text-black font-quicksand" : " text-white font-quicksand"} to="/gallery">Films</NavLink>
+            <NavLink className={({isActive})=> isActive ? "text-text_gold font-quicksand" : "text-white font-quicksand"} to="/gallery">Films</NavLink>
           </li>
           <li className="hover:opacity-70 duration-300">
-            <NavLink className={({isActive})=> isActive ? "text-text_gold font-quicksand" : bg ? "text-black font-quicksand" : " text-white font-quicksand"} to="/contact">Contact</NavLink>
+            <NavLink className={({isActive})=> isActive ? "text-text_gold font-quicksand" : "text-white font-quicksand"} to="/contact">Contact</NavLink>
           </li>
         </ul>
       </nav>
