@@ -8,16 +8,7 @@ import { fadeIn } from "../hooks/variants";
 
 const SectionIntro = () => {
   return (
-    <section className="relative bg-dark pt-52 pb-32 px-6 md:px-32 flex flex-col gap-20 z-[999999]">
-      <div className="lg:grid hidden absolute -top-[80px] right-0 left-0 grid-cols-4">
-        <motion.img variants={fadeIn("up", 0.1, 0.3)} initial="hidden" whileInView={"show"} viewport={{ once: true }} src={award1} className="" alt="" />
-        <motion.img variants={fadeIn("up", 0.2, 0.3)} initial="hidden" whileInView={"show"} viewport={{ once: true }} src={award2} className="" alt="" />
-        <motion.img variants={fadeIn("up", 0.3, 0.3)} initial="hidden" whileInView={"show"} viewport={{ once: true }} src={award3} className="" alt="" />
-        <motion.div variants={fadeIn("up", 0.4, 0.3)} initial="hidden" whileInView={"show"} viewport={{ once: true }} className="p-6 bg-text_gold">
-          <h2 className="font-cormorant font-bold text-xl">WE ARE THE BEST STUDIO PRODUCTION</h2>
-          <p className="font-open_sans font-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </motion.div>
-      </div>
+    <section className="relative bg-dark py-32 px-6 md:px-32 flex flex-col gap-20 z-[999999]">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center overflow-hidden">
         <motion.div
           initial={{ opacity: 0, x: -30 }}
