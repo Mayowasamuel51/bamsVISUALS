@@ -41,7 +41,7 @@ const BgChange = () => {
       {pathname === "/about" && <PageHeader title="About Us" />}
       {pathname === "/gallery" && <PageHeader title="FILMS" />}
       {pathname === `/projectDetail/${pathname.slice(pathname.length - 1, pathname.length)}` && <PageHeader title="PROJECT DETAIL" />}
-      {pathname === "/contact" && <PageHeader title="CONTACT US" />}
+    {pathname === "/contact" && <PageHeader title="CONTACT US" />}
     </div>
   );
 };
