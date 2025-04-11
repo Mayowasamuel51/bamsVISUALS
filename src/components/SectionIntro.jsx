@@ -1,7 +1,4 @@
 import { motion } from "framer-motion";
-import award1 from "../assets/images/award1.png"
-import award2 from "../assets/images/award2.png"
-import award3 from "../assets/images/award3.png"
 import thumbNail from "../assets/images/screencapture-vimeo-1030637546-2025-03-08-21_24_18.png"
 import ReactPlayer from 'react-player'
 import { fadeIn } from "../hooks/variants";
