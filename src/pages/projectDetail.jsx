@@ -9,13 +9,13 @@ const ProjectDetail = () => {
         <section className='lg:p-32 md:p-10 p-4 bg-dark'>
             <div className="flex gap-10 lg:flex-row flex-col">
                 <div className='text-white flex-1 flex flex-col gap-4'>
-                    <h1 className='text-white font-bold text-[48px] font-cormorant'>{detail.title}</h1>
-                    <p className="text-text_gold font-quicksand font-semibold text-lg">{detail.subTitle}</p>
+                    <h1 className='text-white font-bold text-[48px] font-cormorant'>{detail?.title}</h1>
+                    <p className="text-text_gold font-quicksand font-semibold text-lg">{detail?.subTitle}</p>
                     <p className='font-quicksand font-semibold text-lg'>RELEASE DATE:{" "}
-                        <span>{detail.date}</span>
+                        <span>{detail?.date}</span>
                     </p>
-                    <p className='font-open_sans'>{detail.description}</p>
-                    <p className='font-open_sans'>{detail.description2}</p>
+                    <p className='font-open_sans'>{detail?.description}</p>
+                    <p className='font-open_sans'>{detail?.description2}</p>
                     <table className="border border-white w-full">
                         <thead>
                             <tr>
@@ -25,7 +25,7 @@ const ProjectDetail = () => {
                         </thead>
                         <tbody>
                             <tr>
-                                {detail.eventDetails.artists.map((artist, index)=> (
+                                {detail?.eventDetails.artists.map((artist, index)=> (
                                     <>
                                         <tr className='p-10 w-full' key={index}>
                                             <td  className='p-3 font-open_sans text-white' key={index} >{artist}</td>
@@ -33,15 +33,15 @@ const ProjectDetail = () => {
                 
                                     </>
                                 ) )}
-                                <td  className='p-3 border font-open_sans text-text_gold'>{detail.eventDetails.scriptedBy}</td>
+                                <td  className='p-3 border font-open_sans text-text_gold'>{detail?.eventDetails.scriptedBy}</td>
                             </tr>
                         </tbody>
                     </table>
-                    <p className='text-white font-open_sans'>{detail.eventDetails.caption}</p>
+                    <p className='text-white font-open_sans'>{detail?.eventDetails.caption}</p>
                 </div>
 
                 <div className='flex-1 flex flex-col gap-4'>
-                    <img src={detail.light} alt="" />
+                    <img src={detail?.light} alt="" />
                     <h3  className='font-bold font-cormorant text-white text-2xl'>BEHIND THE SCENE</h3>
                 </div>
             </div>
