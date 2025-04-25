@@ -16,15 +16,15 @@ const Films = () => {
             <div className="grid grid-cols-1 lg:grid-cols-3 items-center py-20">
                 <div>
                     <img src={film1} alt="film1" className="h-64 object-cover w-full" />
-                    <p className="bg-text_gold text-center py-2 font-montserrat font-medium text-xl">Jethro weds Venus</p>
+                    {/* <p className="bg-text_gold text-center py-2 font-montserrat font-medium text-xl">Jethro weds Venus</p> */}
                 </div>
                 <div>
                     <img src={film2} alt="film2" className="h-80 object-cover w-full" />
-                    <p className="bg-text_gold text-center py-2 font-montserrat font-medium text-xl">Jethro weds Venus</p>
+                    {/* <p className="bg-text_gold text-center py-2 font-montserrat font-medium text-xl">Jethro weds Venus</p> */}
                 </div>
                 <div>
                     <img src={film3} alt="film3" className="h-64 object-cover w-full" />
-                    <p className="bg-text_gold text-center py-2 font-montserrat font-medium text-xl">Jethro weds Venus</p>
+                    {/* <p className="bg-text_gold text-center py-2 font-montserrat font-medium text-xl">Jethro weds Venus</p> */}
                 </div>
             </div>
             <div className="flex flex-col lg:flex-row gap-10">

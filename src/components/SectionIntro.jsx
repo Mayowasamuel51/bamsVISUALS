@@ -53,7 +53,7 @@ const SectionIntro = () => {
             
         </motion.div>
         <motion.div className="lg:col-span-2 flex flex-col gap-4">
-          <motion.h1 variants={fadeIn("down", 0.1, 0.3)} initial="hidden" whileInView={"show"} viewport={{ once: true }} className="font-cormorant text-white text-2xl font-bold">DO NOT HESITATE TO CHOOSE BAM VISUALS  AS YOUR STUDIO PRODUCTION</motion.h1>
+          <motion.h1 variants={fadeIn("down", 0.1, 0.3)} initial="hidden" whileInView={"show"} viewport={{ once: true }} className="font-cormorant text-white text-2xl font-bold">DO NOT HESITATE TO CHOOSE BAMS VISUALS  AS YOUR STUDIO PRODUCTION</motion.h1>
           <motion.p variants={fadeIn("up", 0.2, 0.3)} initial="hidden" whileInView={"show"} viewport={{ once: true }} className="font-normal text-[#F0F0F0] font-open_sans text-base">We take the time to get to know each couple so the film captures the event in a way that reflects who they are. For us, wedding films are more than just a video. They&apos;re a keepsake that tells your love story in a way only film can. And since every couple is unique, we approach each wedding with fresh eyes and an open heart, ready to create something special.</motion.p>
           <div className="flex justify-around items-center">
             <motion.div variants={fadeIn("right", 0.3, 0.3)} initial="hidden" whileInView={"show"} viewport={{ once: true }} className="text-center">
