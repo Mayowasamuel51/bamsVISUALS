@@ -7,6 +7,8 @@ import thumbNail from "../assets/images/screencapture-vimeo-1030637546-2025-03-0
 import ReactPlayer from 'react-player'
 import StatsAndStory from "../components/StatsAndStory";
 import Studio from "../components/studio";
+import CountUpOnView from "../components/countUpOnView";
+
 
 const About = () => {
 
@@ -56,18 +58,22 @@ const About = () => {
             <p className="font-normal text-[#F0F0F0] font-open_sans text-base">We take the time to get to know each couple so the film captures the event in a way that reflects who they are. For us, wedding films are more than just a video. They&apos;re a keepsake that tells your love story in a way only film can. And since every couple is unique, we approach each wedding with fresh eyes and an open heart, ready to create something special.</p>
             <div className="flex justify-around items-center">
               <div className="text-center">
-                <h2 className="font-quicksand font-bold text-[60px] text-text_gold">250+</h2>
+                <h2 className="font-quicksand font-bold text-[60px] text-text_gold">
+                   <CountUpOnView to={250} />+
+                </h2>
                 <p className="font-quicksand font-bold text-base text-white">WEDDING FILMS</p>
               </div>
               <div className="text-center">
-                <h2 className="font-quicksand font-bold text-[60px] text-text_gold">78+</h2>
+                <h2 className="font-quicksand font-bold text-[60px] text-text_gold">
+                   <CountUpOnView to={78} />+
+                </h2>
                 <p className="font-quicksand font-bold text-base text-white">BIRTHDAY VIDEOS</p>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <div className="lg:grid hidden -top-[80px] right-0 left-0 grid-cols-4 px-20 bg-dark2">
+      {/* <div className="lg:grid hidden -top-[80px] right-0 left-0 grid-cols-4 px-20 bg-dark2">
         <motion.div variants={fadeIn("up", 0.2, 0.3)} initial="hidden" whileInView={"show"} viewport={{ once: true }} className="p-6 bg-text_gold">
           <h2 className="font-cormorant font-bold text-xl">WE ARE THE BEST STUDIO PRODUCTION</h2>
           <p className="font-open_sans font-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -75,7 +81,7 @@ const About = () => {
         <motion.img variants={fadeIn("up", 0.4, 0.3)} initial="hidden" whileInView={"show"} viewport={{ once: true }} src={award1} className="" alt="" />
         <motion.img variants={fadeIn("up", 0.6, 0.3)} initial="hidden" whileInView={"show"} viewport={{ once: true }} src={award2} className="" alt="" />
         <motion.img variants={fadeIn("up", 0.8, 0.3)} initial="hidden" whileInView={"show"} viewport={{ once: true }} src={award3} className="" alt="" />
-      </div>
+      </div> */}
       <StatsAndStory />
       <Studio />
     </main>

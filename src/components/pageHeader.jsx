@@ -108,7 +108,7 @@ const PageHeader = ({ title, subtitle, description, align = "left" }) => {
 
 PageHeader.propTypes = {
     title: PropTypes.string,
-    description: PropTypes.string,
+    description: PropTypes.any,
     subtitle: PropTypes.string,
     align: PropTypes.string,
 }

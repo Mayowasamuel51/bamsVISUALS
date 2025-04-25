@@ -8,7 +8,7 @@ const BgChange = () => {
   return (
     <div className="relative w-full min-h-screen overflow-hidden flex items-center justify-center z-[9999]">
       <div className="absolute top-0 left-0 w-full min-h-screen -z-10">
-        <div className="absolute top-0 left-0 w-full h-full scale-[3.5] lg:scale-150">
+        <div className="absolute top-0 left-0 w-full h-full scale-[4] lg:scale-150">
           <ReactPlayer
             url="https://player.vimeo.com/video/1010058915?h=c7c983dfc5&autoplay=1&muted=1&background=1&badge=0&autopause=0&player_id=0&app_id=58479"
             playing
