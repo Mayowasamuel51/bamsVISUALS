@@ -28,9 +28,10 @@ const Films = () => {
                 </div>
             </div>
             <div className="flex flex-col lg:flex-row gap-10">
-                <p className="flex-1 font-open_sans font-normal text-base text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lectus velit, iaculis quis mauris et, dignissim hendrerit ex. Nulla ultrices vel tellus lacinia pharetra. Integer commodo ligula lobortis sapien vehicula placerat eu id tellus. Ut faucibus neque eget dui rutrum, in hendrerit diam euismod. Nam congue diam nulla, vitae sagittis lorem bibendum eu. Curabitur eu ex pulvinar massa convallis ornare.</p>
+                <p className="flex-1 font-open_sans font-normal text-base text-white">Our process begins with an initial consultation, where we take the time to understand your vision, answer any questions, and address any specific concerns. From there, you’ll choose a customized package that aligns with your needs, style, and budget.
+                </p>
                 <div className="flex-1 flex flex-col gap-4">
-                    <p className="font-open_sans font-normal text-base text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Proin interdum dignissim maximus. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                    <p className="font-open_sans font-normal text-base text-white">On the day of your event, you can expect a seamless and stress-free experience. The Bamsvisuals team is committed to capturing every essential detail—from key moments to authentic, candid interactions—ensuring you can remain fully present while we document your story with precision and care.</p>
                     <div className="flex md:flex-row flex-col gap-10">
                         <Link to="/gallery">
                             <button className="font-quicksand border-2 border-text_gold hover:bg-text_gold hover:text-black duration-300 text-text_gold p-4">SEE ALL PROJECT</button>
