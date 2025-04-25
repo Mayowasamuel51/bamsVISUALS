@@ -7,7 +7,7 @@ const Footer = () => {
             <div className="text-center md:py-20 py-10 bg-dark space-y-10">
                 <div>
                     <motion.h1 variants={fadeIn("up", 0.2, 0.3)} initial="hidden" whileInView={"show"} viewport={{ once: true }} className="font-cormorant text-lg lg:text-3xl md:my-6 my-3 xl:w-[1000px] w-full mx-auto text-white">HAVE IDEA IN YOUR MIND ? LET&apos;S START YOUR PROJECT WITH US</motion.h1>
-                    <motion.p variants={fadeIn("up", 0.4, 0.3)} initial="hidden" whileInView={"show"} viewport={{ once: true }} className="font-quicksand font-bold text-text_gold text-sm md:text-xl">BAMS VISUALS</motion.p>
+                    {/* <motion.p variants={fadeIn("up", 0.4, 0.3)} initial="hidden" whileInView={"show"} viewport={{ once: true }} className="font-quicksand font-bold text-text_gold text-sm md:text-xl">BAMS VISUALS</motion.p> */}
                 </div>
 
                 <div className="flex md:flex-row flex-col text-white justify-center gap-5 items-center">
