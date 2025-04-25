@@ -15,8 +15,8 @@ const testimonial = [
   },
   {
     text: "We hired Bamsvisuals to cover our corporate launch event, and they were outstanding. Discreet, efficient, and incredibly skilled at capturing the energy of the evening. The final footage was polished, professional, and delivered promptly",
-    author: "Jethro Ademola",
-    role: "Eve and Peter",
+    author: "Eve and Peter",
+    // role: "Eve and Peter",
   },
 ];
 
