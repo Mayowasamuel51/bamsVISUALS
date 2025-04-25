@@ -69,7 +69,7 @@ const PageHeader = ({ title, subtitle, description, align = "left" }) => {
                     variants={fadeUpVariant}
                 >
                     {title}
-                    {title === "BAM VISUALS" && (
+                    {title === "BAMS VISUALS" && (
                         ""
                     )}
                 </motion.h1>

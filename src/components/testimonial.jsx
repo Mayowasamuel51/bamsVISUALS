@@ -4,19 +4,19 @@ import { fadeIn } from "../hooks/variants";
 
 const testimonial = [
   {
-    text: "Praesent non mauris ac ligula ullamcorper vehicula. Praesent mollis, nibh in venenatis iaculis, mauris eros iaculis quam, ut aliquam nisi nunc vitae quam",
-    author: "Jethro Jeff",
-    role: "Designer",
+    text: "Working with Bamsvisuals was one of the best decisions we made for our wedding. The team was incredibly professional, attentive, and made us feel completely at ease throughout the day. The final video captured every emotion perfectly—it’s something we’ll treasure forever",
+    author: "Atinuke Ogundolie.",
+    // role: "Designer",
   },
   {
-    text: "Praesent non mauris ac ligula ullamcorper vehicula. Praesent mollis, nibh in venenatis iaculis, mauris eros iaculis quam, ut aliquam nisi nunc vitae quam",
-    author: "Mayor Black",
-    role: "Developer",
+    text: "Bamsvisuals brought our brand story to life in a way we never imagined. From concept to final cut, their creative direction and attention to detail were top-notch. They truly understood our vision and delivered beyond expectations.",
+    author: " Seyi and Tiroye Amoye",
+    // role: "Developer",
   },
   {
-    text: "Praesent non mauris ac ligula ullamcorper vehicula. Praesent mollis, nibh in venenatis iaculis, mauris eros iaculis quam, ut aliquam nisi nunc vitae quam",
+    text: "We hired Bamsvisuals to cover our corporate launch event, and they were outstanding. Discreet, efficient, and incredibly skilled at capturing the energy of the evening. The final footage was polished, professional, and delivered promptly",
     author: "Jethro Ademola",
-    role: "whatever",
+    role: "Eve and Peter",
   },
 ];
 
@@ -42,7 +42,7 @@ const Testimonial = () => {
         >
           WHAT THEY SAY ABOUT OUR STUDIO ?
         </motion.h1>
-        <p className="text-white font-open_sans">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+        {/* <p className="text-white font-open_sans">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p> */}
       </div>
       <div className="">
         <div className="relative ">
