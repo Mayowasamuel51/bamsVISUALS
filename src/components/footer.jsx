@@ -11,15 +11,15 @@ const Footer = () => {
                 </div>
 
                 <div className="flex md:flex-row flex-col text-white justify-center gap-5 items-center">
-                    <motion.p variants={fadeIn("opacity", 0.2, 0.3)} initial="opacity" whileInView={"show"} viewport={{ once: true }} className="font-cormorant text-base lg:text-2xl font-bold">FACEBOOK</motion.p>
-                    <motion.p variants={fadeIn("opacity", 0.4, 0.3)} initial="opacity" whileInView={"show"} viewport={{ once: true }} className="font-cormorant text-base lg:text-2xl font-bold">TWITTER</motion.p>
-                    <motion.p variants={fadeIn("opacity", 0.6, 0.3)} initial="opacity" whileInView={"show"} viewport={{ once: true }} className="font-cormorant text-base lg:text-2xl font-bold">LINKEDIN</motion.p>
+                    {/* <motion.p variants={fadeIn("opacity", 0.2, 0.3)} initial="opacity" whileInView={"show"} viewport={{ once: true }} className="font-cormorant text-base lg:text-2xl font-bold">FACEBOOK</motion.p> */}
+                    {/* <motion.p variants={fadeIn("opacity", 0.4, 0.3)} initial="opacity" whileInView={"show"} viewport={{ once: true }} className="font-cormorant text-base lg:text-2xl font-bold">TWITTER</motion.p> */}
+                    {/* <motion.p variants={fadeIn("opacity", 0.6, 0.3)} initial="opacity" whileInView={"show"} viewport={{ once: true }} className="font-cormorant text-base lg:text-2xl font-bold">LINKEDIN</motion.p> */}
                     <motion.p variants={fadeIn("opacity", 0.8, 0.3)} initial="opacity" whileInView={"show"} viewport={{ once: true }} className="font-cormorant text-base lg:text-2xl font-bold">INSTAGRAM</motion.p>
                     <motion.p variants={fadeIn("opacity", 1, 0.3)} initial="opacity" whileInView={"show"} viewport={{ once: true }} className="font-cormorant text-base lg:text-2xl font-bold">YOUTUBE</motion.p>
                 </div>
             </div>
             <div className="overflow-hidden py-10 px-4 lg:px-20 bg-[url('./assets/images/servicebg.png')] bg-cover bg-fixed bg-no-repeat relative after:absolute after:inset-0 after:bg-black/80">
-                <motion.p variants={fadeIn("left", 0.5, 0.3)} initial="hidden" whileInView={"show"} viewport={{ once: true }} className="relative z-10 text-white text-right font-open_sans">COPYRIGHT {new Date().getFullYear()} © BAMVISUALS | DESIGNED BY TIMILEHIN</motion.p>
+                <motion.p variants={fadeIn("left", 0.5, 0.3)} initial="hidden" whileInView={"show"} viewport={{ once: true }} className="relative z-10 text-white text-right font-open_sans">COPYRIGHT {new Date().getFullYear()} © BAMVISUALS </motion.p>
             </div>
         </>
     )
