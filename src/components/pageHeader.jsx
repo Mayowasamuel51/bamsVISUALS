@@ -70,7 +70,7 @@ const PageHeader = ({ title, subtitle, description, align = "left" }) => {
                 >
                     {title}
                     {title === "BAM VISUALS" && (
-                        <span className="block font-cormorant text-text_gold">PRODUCTION</span>
+                        ""
                     )}
                 </motion.h1>
             )}

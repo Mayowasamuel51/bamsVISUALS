@@ -26,7 +26,7 @@ const BgChange = () => {
       {pathname === "/" && (
         <PageHeader
           subtitle="Welcome to"
-          title="BAM VISUALS"
+          title="BAMS VISUALS"
           description={
             <>
               A wedding film is more than just a recording —<br />
