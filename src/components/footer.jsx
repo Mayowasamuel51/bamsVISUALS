@@ -13,7 +13,7 @@ const Footer = () => {
                 <div className="flex md:flex-row flex-col text-white justify-center gap-5 items-center">
                     {/* <motion.p variants={fadeIn("opacity", 0.2, 0.3)} initial="opacity" whileInView={"show"} viewport={{ once: true }} className="font-cormorant text-base lg:text-2xl font-bold">FACEBOOK</motion.p> */}
                     {/* <motion.p variants={fadeIn("opacity", 0.4, 0.3)} initial="opacity" whileInView={"show"} viewport={{ once: true }} className="font-cormorant text-base lg:text-2xl font-bold">TWITTER</motion.p> */}
-                    <motion.p variants={fadeIn("opacity", 0.6, 0.3)} initial="opacity" whileInView={"show"} viewport={{ once: true }} className="font-cormorant text-base lg:text-2xl font-bold">TIKTIO</motion.p>
+                    <motion.p variants={fadeIn("opacity", 0.6, 0.3)} initial="opacity" whileInView={"show"} viewport={{ once: true }} className="font-cormorant text-base lg:text-2xl font-bold"> TIKTOK</motion.p>
                     <motion.p variants={fadeIn("opacity", 0.8, 0.3)} initial="opacity" whileInView={"show"} viewport={{ once: true }} className="font-cormorant text-base lg:text-2xl font-bold">INSTAGRAM</motion.p>
                     <motion.p variants={fadeIn("opacity", 1, 0.3)} initial="opacity" whileInView={"show"} viewport={{ once: true }} className="font-cormorant text-base lg:text-2xl font-bold">YOUTUBE</motion.p>
                 </div>
