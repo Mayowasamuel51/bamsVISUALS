@@ -15,7 +15,7 @@ const StatsAndStory = () => {
           >
             <div>
               <motion.h2 variants={fadeIn("up", 0.1, 0.3)} initial="hidden" whileInView={"show"} viewport={{ once: true }} className="text-lg font-bold font-quicksand tracking-widest text-text_gold uppercase">STORY</motion.h2>
-              <h3 className="lg:w-[400px] leading-[1.2] text-4xl md:text-[48px] font-bold text-white font-cormorant">STORY BEHIND BAM VISUALS</h3>
+              <h3 className="lg:w-[400px] leading-[1.2] text-4xl md:text-[48px] font-bold text-white font-cormorant">STORY BEHIND BAMS VISUALS</h3>
             </div>
           </motion.div>
 
@@ -27,17 +27,16 @@ const StatsAndStory = () => {
             className="space-y-6"
           >
             <p className="text-white text-lg leading-relaxed font-open_sans">
-            Aliquam ex lacus, venenatis id finibus ut, scelerisque at felis. 
-            Nulla facilisi. Sed fringilla enim consectetur cursus euismod. Sed vel magna in ex malesuada rhoncus ac a turpis.
+            Bamsvisuals was born from a passion for storytelling through the lens. What began as a creative pursuit quickly evolved into a full-service visual production company committed to capturing moments with purpose and artistry. Founded by a team of filmmakers and creatives, our mission has always been to blend technical expertise with authentic storytelling—whether we’re documenting a wedding, producing a film, directing a brand campaign, or covering a live event. At the heart of Bamsvisuals is a dedication to creating timeless visuals that resonate, inspire, and connect.
             </p>
 
-            <p className="text-white text-lg md:text-xl font-light font-open_sans">
+            {/* <p className="text-white text-lg md:text-xl font-light font-open_sans">
             ” Vivamus quam lectus, facilisis a massa facilisis,
             imperdiet maximus nunc. Integer ut metus eget lectus imperdiet pulvinar in ac urna “
-            </p>
+            </p> */}
 
             <div>
-              <p className="text-text_gold font-bold font-cormorant text-2xl">BAM VISUALS NAME HERE</p>
+              <p className="text-text_gold font-bold font-cormorant text-2xl">Ayobami Samuel Daramola</p>
               <p className="font-open_sans text-base text-white">CEO OF BAM VISUALS</p>
             </div>
           </motion.div>

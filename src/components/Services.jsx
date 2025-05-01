@@ -5,23 +5,23 @@ import { ImVideoCamera } from "react-icons/im";
 
 const services = [
   {
-    title: "FILM PRODUCTION",
-    description: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis",
+    title:  "CREATIVE DIRECTION",
+    description: "We provide end-to-end film production services, from concept development and scripting to filming and post-production. Our team delivers visually compelling and story-driven content tailored to your audience and objectives.",
     icon: <FaFilm />,
   },
   {
-    title: "MUSIC VIDEO",
-    description: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis",
+    title: "WEDDINGS",
+    description: "Our wedding coverage is designed to be elegant, unobtrusive, and emotionally resonant—capturing every meaningful moment so you can relive your special day for years to come",
     icon: <MdSmartDisplay />,
   },
   {
-    title: "INTERVIEWS",
-    description: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis",
+    title: "EVENTS",
+    description: "From corporate functions to private celebrations, we specialize in documenting events with professionalism and creativity, ensuring every detail and interaction is captured with clarity and purpose",
     icon: <ImVideoCamera />,
   },
   {
-    title: "CREATIVE DIRECTION",
-    description: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis",
+    title: "FILM PRODUCTION",
+    description: "We offer strategic creative direction that brings your vision to life—from visual branding to storytelling—guiding each project with a cohesive aesthetic and clear artistic intent.",
     icon: <FaMusic />,
   },
 ];
@@ -38,7 +38,7 @@ const Services = () => {
             viewport={{ once: true }}
             className="text-lg font-bold font-quicksand tracking-widest text-text_gold uppercase"
           >
-            SERVICE
+            SERVICES
           </motion.h2>
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
@@ -47,7 +47,7 @@ const Services = () => {
             viewport={{ once: true }}
             className="text-4xl md:text-[48px] font-bold text-white font-cormorant"
           >
-            WHAT SERVICE WE OFFER ?
+            WHAT SERVICES WE OFFER ?
           </motion.h1>
         </div>
 

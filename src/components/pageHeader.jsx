@@ -69,8 +69,8 @@ const PageHeader = ({ title, subtitle, description, align = "left" }) => {
                     variants={fadeUpVariant}
                 >
                     {title}
-                    {title === "BAM VISUALS" && (
-                        <span className="block font-cormorant text-text_gold">PRODUCTION</span>
+                    {title === "BAMS VISUALS" && (
+                        ""
                     )}
                 </motion.h1>
             )}

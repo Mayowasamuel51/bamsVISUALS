@@ -10,7 +10,7 @@ const BgChange = () => {
       <div className="absolute top-0 left-0 w-full min-h-screen -z-10">
         <div className="absolute top-0 left-0 w-full h-full scale-[4] lg:scale-150">
           <ReactPlayer
-            url="https://player.vimeo.com/video/1010058915?h=c7c983dfc5&autoplay=1&muted=1&background=1&badge=0&autopause=0&player_id=0&app_id=58479"
+            url="https://player.vimeo.com/video/1070724319?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
             playing
             muted
             loop
@@ -26,14 +26,14 @@ const BgChange = () => {
       {pathname === "/" && (
         <PageHeader
           subtitle="Welcome to"
-          title="BAM VISUALS"
+          title="BAMS VISUALS"
           description={
             <>
               A wedding film is more than just a recording —<br />
               It’s a timeless keepsake, capturing the emotions
               and memories you’ll cherish for a lifetime.
             </>
-          }
+        }
           align="center"
         />
       )}
