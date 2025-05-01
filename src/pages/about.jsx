@@ -1,8 +1,4 @@
 import { motion } from "framer-motion";
-import { fadeIn } from "../hooks/variants";
-import award1 from "../assets/images/award1.png"
-import award2 from "../assets/images/award2.png"
-import award3 from "../assets/images/award3.png"
 import thumbNail from "../assets/images/screencapture-vimeo-1030637546-2025-03-08-21_24_18.png"
 import ReactPlayer from 'react-player'
 import StatsAndStory from "../components/StatsAndStory";
@@ -59,13 +55,13 @@ const About = () => {
             <div className="flex justify-around items-center">
               <div className="text-center">
                 <h2 className="font-quicksand font-bold text-[60px] text-text_gold">
-                   <CountUpOnView to={250} />+
+                   <CountUpOnView to={250} className="w-[90px]" />
                 </h2>
                 <p className="font-quicksand font-bold text-base text-white">WEDDING FILMS</p>
               </div>
               <div className="text-center">
                 <h2 className="font-quicksand font-bold text-[60px] text-text_gold">
-                   <CountUpOnView to={78} />+
+                  <CountUpOnView to={78} className="w-[90px]" />
                 </h2>
                 <p className="font-quicksand font-bold text-base text-white">BIRTHDAY VIDEOS</p>
               </div>
