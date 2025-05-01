@@ -24,7 +24,7 @@ const Navbar = () => {
   return (
     <header
       className={`z-[999999999999999999999] w-full fixed top-0 left-0 right-0 flex justify-between items-center px-6 md:px-56 transition-all duration-500 ${
-        bg ? "bg-black dark:bg-black shadow-md bg-opacity-10 dark:bg-opacity-10" : "bg-dark dark:bg-dark bg-opacity-10 dark:bg-opacity-10"
+        bg ? "bg-gradient-to-b from-black to-transparent dark:bg-gradient-to-b bg-opacity-30 dark:bg-opacity-30" : "bg-gradient-to-b from-black to-transparent dark:bg-gradient-to-b bg-opacity-30 dark:bg-opacity-30"
       }`}
     >
       <Link to="/">
