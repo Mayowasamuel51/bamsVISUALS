@@ -23,7 +23,7 @@ const CountUpOnView = ({ to, duration = 3, className = "" }) => {
 
   return (
     <motion.span ref={ref} className={className}>
-      {rounded}+
+      {rounded}
     </motion.span>
   );
 };
