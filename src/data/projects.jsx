@@ -1,9 +1,9 @@
 import gallery_one from "../assets/images/screencapture-player-vimeo-video-1018523334-2025-03-20-11_34_49.png";
 import gallery_three from "../assets/images/thumbst.jpg";
 import gallery_four from "../assets/images/thumb.jpg";
-import gallery_eight from "../assets/images/screencapture-vimeo-1021620397-2025-03-08-21_28_49.png";
-import gallery_seven from "../assets/images/screencapture-vimeo-1030637546-2025-03-08-21_24_18.png";
-import gallery_six from "../assets/images/gallery6.jpeg";
+import gallery_eight from "../assets/images/thumb atitobi.jpg";
+import gallery_seven from "../assets/images/thumbs.jpg";
+import gallery_six from "../assets/images/thumb pete.jpg";
 
 
 
@@ -59,45 +59,45 @@ export const videos = [
         id: 4,
         url: "https://vimeo.com/1030637546",
         light: gallery_seven,
-        title: "LOVER ON THE BUSS - MUSIC VIDEO",
-        subTitle: "LOVER consectetur adipiscing elit. Ut elit tellus, luctus",
-        date: "14 FEBRUARY 2024",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.",
-        description2: "Donec tincidunt erat a diam euismod pharetra. Vestibulum nec nisi eu mi viverra consequat nec non purus. Curabitur porta, felis at sollicitudin euismod, eros ipsum tincidunt massa, quis congue ipsum nisl ut risus. Praesent pharetra augue eget nibh fermentum, ut efficitur lectus posuere.",
-        eventDetails: {
-            artists: ["Tyas Widagdo", "Elsa Verina", "Payad Smasi", "Berlin Sendum"],
-            scriptedBy: "Hendrik Morella",
-            caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."
-        }
+        title: "Dami + Evodie Traditional Wedding Teaser - #LoveInGodsTime2025",
+        // subTitle: "LOVER consectetur adipiscing elit. Ut elit tellus, luctus",
+        // date: "14 FEBRUARY 2024",
+        description: "Dami and Evodie’s traditional wedding was a vibrant blend of culture, love, and joyful celebration. This teaser captures the energy, elegance, and heartfelt moments of their union — a day where two families became one in the most beautiful way",
+        // description2: "Donec tincidunt erat a diam euismod pharetra. Vestibulum nec nisi eu mi viverra consequat nec non purus. Curabitur porta, felis at sollicitudin euismod, eros ipsum tincidunt massa, quis congue ipsum nisl ut risus. Praesent pharetra augue eget nibh fermentum, ut efficitur lectus posuere.",
+        // eventDetails: {
+        //     artists: ["Tyas Widagdo", "Elsa Verina", "Payad Smasi", "Berlin Sendum"],
+        //     scriptedBy: "Hendrik Morella",
+        //     caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."
+        // }
     },
     {
         id: 5,
         url: "https://vimeo.com/1021620397",
         light: gallery_eight,
-        title: "ENDLESS HAPPYNES - MUSIC VIDEO",
-        subTitle: "MUSIC consectetur adipiscing elit. Ut elit tellus, luctus",
-        date: "17 DECEMBER 2021",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.",
-        description2: "Donec tincidunt erat a diam euismod pharetra. Vestibulum nec nisi eu mi viverra consequat nec non purus. Curabitur porta, felis at sollicitudin euismod, eros ipsum tincidunt massa, quis congue ipsum nisl ut risus. Praesent pharetra augue eget nibh fermentum, ut efficitur lectus posuere.",
-        eventDetails: {
-            artists: ["Tyas Widagdo", "Elsa Verina", "Payad Smasi", "Berlin Sendum"],
-            scriptedBy: "Hendrik Morella",
-            caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."
-        }
+        title: "Atinuke & Oluwatobiloba",
+        // subTitle: "MUSIC consectetur adipiscing elit. Ut elit tellus, luctus",
+        // date: "17 DECEMBER 2021",
+        description: "A day of elegance, joy, and answered prayers — Atinuke and Oluwatobiloba’s white wedding was a graceful celebration of love and faith. This teaser captures the beauty of their union, surrounded by laughter, emotion, and the warmth of everyone who came to witness their forever.",
+        // description2: "Donec tincidunt erat a diam euismod pharetra. Vestibulum nec nisi eu mi viverra consequat nec non purus. Curabitur porta, felis at sollicitudin euismod, eros ipsum tincidunt massa, quis congue ipsum nisl ut risus. Praesent pharetra augue eget nibh fermentum, ut efficitur lectus posuere.",
+        // eventDetails: {
+        //     artists: ["Tyas Widagdo", "Elsa Verina", "Payad Smasi", "Berlin Sendum"],
+        //     scriptedBy: "Hendrik Morella",
+        //     caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."
+        // }
     },
     {
         id: 6,
-        url: "https://vimeo.com/990177049/e349d31ec3",
+        url: "https://vimeo.com/1010058915?share=copy#t=0",
         light: gallery_six,
-        title: "GREAT SUMMER - TVC",
-        subTitle: "TVC consectetur adipiscing elit. Ut elit tellus, luctus",
-        date: "15 MARCH 2021",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.",
-        description2: "Donec tincidunt erat a diam euismod pharetra. Vestibulum nec nisi eu mi viverra consequat nec non purus. Curabitur porta, felis at sollicitudin euismod, eros ipsum tincidunt massa, quis congue ipsum nisl ut risus. Praesent pharetra augue eget nibh fermentum, ut efficitur lectus posuere.",
-        eventDetails: {
-            artists: ["Tyas Widagdo", "Elsa Verina", "Payad Smasi", "Berlin Sendum"],
-            scriptedBy: "Hendrik Morella",
-            caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."
-        }
+        title: "Eve & Peter Traditional Wedding Teaser",
+        // subTitle: "TVC consectetur adipiscing elit. Ut elit tellus, luctus",
+        // date: "15 MARCH 2021",
+        description: "Eve and Peter’s traditional wedding was a heartfelt celebration of love, culture, and divine timing. This teaser captures the essence of their special day — rich in tradition, joy, and the undeniable truth that Oluwa ti ṣe — God has done it.",
+        // description2: "Donec tincidunt erat a diam euismod pharetra. Vestibulum nec nisi eu mi viverra consequat nec non purus. Curabitur porta, felis at sollicitudin euismod, eros ipsum tincidunt massa, quis congue ipsum nisl ut risus. Praesent pharetra augue eget nibh fermentum, ut efficitur lectus posuere.",
+        // eventDetails: {
+            // artists: ["Tyas Widagdo", "Elsa Verina", "Payad Smasi", "Berlin Sendum"],
+            // scriptedBy: "Hendrik Morella",
+            // caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."
+        // }
     },
 ]
