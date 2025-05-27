@@ -10,7 +10,7 @@ const BgChange = () => {
       <div className="absolute top-0 left-0 w-full min-h-screen -z-10">
         <div className="absolute top-0 left-0 w-full h-full scale-[4] lg:scale-150">
           <ReactPlayer
-            url="https://player.vimeo.com/video/1070724319?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+            url="https://player.vimeo.com/video/1085563688?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
             playing
             muted
             loop

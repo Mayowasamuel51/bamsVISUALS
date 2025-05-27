@@ -47,9 +47,11 @@ const SectionIntro = () => {
             loop={true}
             playing
             muted
-            width="500"
+            width="500" 
             light={thumbNail}
-            url={"https://player.vimeo.com/video/1019768938?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"} />
+            // url={"https://player.vimeo.com/video/1019768938?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"}
+            url={"https://player.vimeo.com/video/1085563688?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"}
+             />
             
         </motion.div>
         <motion.div className="lg:col-span-2 flex flex-col gap-4">
