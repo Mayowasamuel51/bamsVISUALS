@@ -57,7 +57,7 @@ export const videos = [
     },
     {
         id: 4,
-        url: "https://vimeo.com/1030637546",
+        url: "https://vimeo.com/1078452329?share=copy",
         light: gallery_seven,
         title: "Dami + Evodie Traditional Wedding Teaser - #LoveInGodsTime2025",
         // subTitle: "LOVER consectetur adipiscing elit. Ut elit tellus, luctus",
@@ -72,7 +72,7 @@ export const videos = [
     },
     {
         id: 5,
-        url: "https://vimeo.com/1021620397",
+        url: "https://vimeo.com/1010058915?share=copy#t=0",
         light: gallery_eight,
         title: "Atinuke & Oluwatobiloba",
         // subTitle: "MUSIC consectetur adipiscing elit. Ut elit tellus, luctus",
@@ -87,7 +87,7 @@ export const videos = [
     },
     {
         id: 6,
-        url: "https://vimeo.com/1010058915?share=copy#t=0",
+        url: "https://vimeo.com/1030637546?share=copy",
         light: gallery_six,
         title: "Eve & Peter Traditional Wedding Teaser",
         // subTitle: "TVC consectetur adipiscing elit. Ut elit tellus, luctus",

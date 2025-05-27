@@ -47,7 +47,7 @@ const Gallery = () => {
               // }
               />
               <div className="flex flex-col items-start justify-between gap-2 py-3">
-                <h2 className="font-cormorant text-2xl font-bold line-clamp-1">{video.title}</h2>
+                <h1 className="font-cormorant text-2xl text-center  font-bold line-clamp-1">{video.title}</h1>
                 {/* <p className="font-semibold text-lg font-quicksand text-text_gold">SINONPSIS</p> */}
                 <p>{video.description}</p>
                 <Link to={`/projectDetail/${index + 1}`}>
