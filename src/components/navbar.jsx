@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { NavLink, Link } from "react-router-dom";
-import { FaBars, FaXmark, FaInstagram, FaEnvelope, FaLinkedin } from "react-icons/fa6";
+import { FaBars, FaXmark } from "react-icons/fa6";
 import { motion, AnimatePresence } from "framer-motion";
 import Mobilenav from "./mobilenav";
 import logo from "../assets/images/logo2.png";
@@ -23,8 +23,8 @@ const Navbar = () => {
 
   return (
     <header
-      className={`bg-opacity-70 z-[999999999999999999999] w-full fixed top-0 left-0 right-0 flex justify-between items-center px-6 md:px-56 transition-all duration-500 ${
-        bg ? "bg-black dark:bg-black shadow-md" : "bg-dark dark:bg-dark"
+      className={`z-[999999999999999999999] w-full fixed top-0 left-0 right-0 flex justify-between items-center px-6 md:px-56 transition-all duration-500 ${
+        bg ? "bg-gradient-to-b from-black to-transparent dark:bg-gradient-to-b bg-opacity-50 dark:bg-opacity-50" : "bg-gradient-to-b from-black to-transparent dark:bg-gradient-to-b bg-opacity-50 dark:bg-opacity-50"
       }`}
     >
       <Link to="/">
