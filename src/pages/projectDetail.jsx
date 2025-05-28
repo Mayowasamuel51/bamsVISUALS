@@ -25,7 +25,7 @@ const ProjectDetail = () => {
                         </thead>
                         <tbody>
                             <tr>
-                                {detail?.eventDetails.artists.map((artist, index)=> (
+                                {detail?.eventDetails?.artists.map((artist, index)=> (
                                     <>
                                         <tr className='p-10 w-full' key={index}>
                                             <td  className='p-3 font-open_sans text-white' key={index} >{artist}</td>
@@ -33,11 +33,11 @@ const ProjectDetail = () => {
                 
                                     </>
                                 ) )}
-                                <td  className='p-3 border font-open_sans text-text_gold'>{detail?.eventDetails.scriptedBy}</td>
+                                <td  className='p-3 border font-open_sans text-text_gold'>{detail?.eventDetails?.scriptedBy}</td>
                             </tr>
                         </tbody>
                     </table>
-                    <p className='text-white font-open_sans'>{detail?.eventDetails.caption}</p>
+                    <p className='text-white font-open_sans'>{detail?.eventDetails?.caption}</p>
                 </div>
 
                 <div className='flex-1 flex flex-col gap-4'>
