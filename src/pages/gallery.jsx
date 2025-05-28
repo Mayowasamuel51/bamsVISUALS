@@ -66,7 +66,9 @@ const Gallery = () => {
             <div className="p-4 space-y-3">
               <h3 className="font-cormorant text-xl font-bold text-white line-clamp-1">{video.title}</h3>
               <p className="text-sm text-gray-300 line-clamp-3 italic">{video.description}</p>
-              <Link to={`/projectDetail/${index + 1}`}>
+              <Link 
+              // to={`/projectDetail/${index + 1}`}
+              >
                 <button className="mt-2 px-5 py-2 border border-text_gold text-text_gold hover:bg-text_gold hover:text-black transition-colors duration-300 font-quicksand font-semibold rounded">
                   Read More
                 </button>
