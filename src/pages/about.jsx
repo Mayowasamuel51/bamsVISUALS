@@ -55,15 +55,15 @@ const About = () => {
             <div className="flex justify-around items-center">
               <div className="text-center">
                 <h2 className="font-quicksand font-bold text-[60px] text-text_gold">
-                   <CountUpOnView to={250} className="" />+
+                   {/* <CountUpOnView to={250} className="" />+ */}
                 </h2>
-                <p className="font-quicksand font-bold text-base text-white">WEDDING FILMS</p>
+                {/* <p className="font-quicksand font-bold text-base text-white">WEDDING FILMS</p> */}
               </div>
               <div className="text-center">
                 <h2 className="font-quicksand font-bold text-[60px] text-text_gold">
-                  <CountUpOnView to={78} className="" />+
+                  {/* <CountUpOnView to={78} className="" />+ */}
                 </h2>
-                <p className="font-quicksand font-bold text-base text-white">BIRTHDAY VIDEOS</p>
+                {/* <p className="font-quicksand font-bold text-base text-white">BIRTHDAY VIDEOS</p> */}
               </div>
             </div>
           </div>
