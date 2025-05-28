@@ -77,9 +77,9 @@ const About = () => {
         <motion.img variants={fadeIn("up", 0.4, 0.3)} initial="hidden" whileInView={"show"} viewport={{ once: true }} src={award1} className="" alt="" />
         <motion.img variants={fadeIn("up", 0.6, 0.3)} initial="hidden" whileInView={"show"} viewport={{ once: true }} src={award2} className="" alt="" />
         <motion.img variants={fadeIn("up", 0.8, 0.3)} initial="hidden" whileInView={"show"} viewport={{ once: true }} src={award3} className="" alt="" />
-      </div> */}
+    </div> */}
       <StatsAndStory />
-      <Studio />
+      {/* <Studio /> */}
     </main>
   );
 };
