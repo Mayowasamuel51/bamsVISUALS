@@ -7,6 +7,7 @@ import Contact from "../components/contact";
 import Blog from "../components/blog";
 
 const Home = () => {
+    let loced;
     return (
         <>
             <SectionIntro />
