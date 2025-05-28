@@ -8,6 +8,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Mobilenav from "./mobilenav";
 import logo from "../assets/images/logo2.png";
 import logo2 from "../assets/images/logo-gold.png";
+import { ImYoutube } from "react-icons/im";
 
 const Navbar = () => {
   const [bg, handleBg] = useState(false);
@@ -71,7 +72,8 @@ const Navbar = () => {
           <MdMailOutline  href="https://www.youtube.com/@BamsVisuals"/>
         </div>
         <div className="p-1.5 grid place-content-center rounded-full border-2 border-white hover:bg-white hover:text-black duration-200">
-          <IoLink />
+          {/* <IoLink /> */}
+          <ImYoutube href="https://www.youtube.com/@BamsVisuals"/>
         </div>
         <button className="duration-200 text-sm border-2 border-white p-3 px-6 hover:bg-white text-white hover:text-black">
          <a href="/contact"> Hire Us</a>
