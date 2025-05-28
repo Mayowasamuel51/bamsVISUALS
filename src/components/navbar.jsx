@@ -65,16 +65,16 @@ const Navbar = () => {
 
       <div className="hidden md:flex flex-1 text-2xl items-center gap-7 text-white justify-end">
         <div className="p-1.5 grid place-content-center rounded-full border-2 border-white hover:bg-white hover:text-black duration-200">
-          <FaInstagram />
+          <FaInstagram href="https://www.instagram.com/bamsvisuals/" />
         </div>
         <div className="p-1.5 grid place-content-center rounded-full border-2 border-white hover:bg-white hover:text-black duration-200">
-          <MdMailOutline />
+          <MdMailOutline  href="https://www.youtube.com/@BamsVisuals"/>
         </div>
         <div className="p-1.5 grid place-content-center rounded-full border-2 border-white hover:bg-white hover:text-black duration-200">
           <IoLink />
         </div>
         <button className="duration-200 text-sm border-2 border-white p-3 px-6 hover:bg-white text-white hover:text-black">
-          Hire Us
+         <a href="/contact"> Hire Us</a>
         </button>
       </div>
 
